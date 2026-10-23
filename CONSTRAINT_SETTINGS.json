@@ -1,0 +1,104 @@
+{
+  "fpga1_bd": [
+    {
+      "file": "fpga1_bd/constraints/ax7a035b_an5642_pins.xdc",
+      "enabled": true,
+      "used_in_synthesis": true,
+      "used_in_implementation": true,
+      "processing_order": null
+    },
+    {
+      "file": "fpga1_bd/constraints/ax7a035b_board_clock.xdc",
+      "enabled": true,
+      "used_in_synthesis": true,
+      "used_in_implementation": true,
+      "processing_order": null
+    },
+    {
+      "file": "fpga1_bd/constraints/camera_timing_42mhz.xdc",
+      "enabled": true,
+      "used_in_synthesis": true,
+      "used_in_implementation": true,
+      "processing_order": null
+    },
+    {
+      "file": "fpga1_bd/constraints/ax7a035b_sfp1.xdc",
+      "enabled": true,
+      "used_in_synthesis": true,
+      "used_in_implementation": true,
+      "processing_order": null
+    },
+    {
+      "file": "fpga1_bd/constraints/reset_status_cdc.xdc",
+      "enabled": true,
+      "used_in_synthesis": false,
+      "used_in_implementation": true,
+      "processing_order": "LATE"
+    }
+  ],
+  "fpga2_bd": [
+    {
+      "file": "fpga2_bd/constraints/constrs_1/new/system.xdc",
+      "enabled": true,
+      "used_in_synthesis": true,
+      "used_in_implementation": true,
+      "processing_order": null
+    },
+    {
+      "file": "fpga2_bd/constraints/constrs_1/new/an5642.xdc",
+      "enabled": false,
+      "used_in_synthesis": true,
+      "used_in_implementation": true,
+      "processing_order": null
+    },
+    {
+      "file": "fpga2_bd/constraints/constrs_1/new/hdmi.xdc",
+      "enabled": false,
+      "used_in_synthesis": true,
+      "used_in_implementation": true,
+      "processing_order": null
+    },
+    {
+      "file": "fpga2_bd/constraints/z100_sfpa.xdc",
+      "enabled": true,
+      "used_in_synthesis": true,
+      "used_in_implementation": true,
+      "processing_order": null
+    },
+    {
+      "file": "fpga2_bd/constraints/z100_sfpa_control.xdc",
+      "enabled": true,
+      "used_in_synthesis": true,
+      "used_in_implementation": true,
+      "processing_order": null
+    },
+    {
+      "file": "fpga2_bd/constraints/z100_hdmi_parallel.xdc",
+      "enabled": true,
+      "used_in_synthesis": true,
+      "used_in_implementation": true,
+      "processing_order": null
+    },
+    {
+      "file": "fpga2_bd/constraints/receiver_reset_sync.xdc",
+      "enabled": true,
+      "used_in_synthesis": false,
+      "used_in_implementation": true,
+      "processing_order": null
+    },
+    {
+      "file": "fpga2_bd/constraints/rx_admission_cdc.xdc",
+      "enabled": true,
+      "used_in_synthesis": false,
+      "used_in_implementation": true,
+      "processing_order": null
+    },
+    {
+      "file": "fpga2_bd/roi_architecture/dual_mode_20261019/dual_mode_ui.xdc",
+      "enabled": true,
+      "used_in_synthesis": true,
+      "used_in_implementation": true,
+      "processing_order": null
+    }
+  ]
+}

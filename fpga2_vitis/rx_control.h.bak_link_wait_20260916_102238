@@ -1,0 +1,118 @@
+#ifndef RX_CONTROL_H
+#define RX_CONTROL_H
+#include "xparameters.h"
+#include "xil_io.h"
+#include "xil_printf.h"
+#include "xstatus.h"
+#include "sleep.h"
+#include "xaxivdma.h"
+#include "xtime_l.h"
+#define RX_GPIO_BASE XPAR_AXI_GPIO_0_BASEADDR
+#define RX_STATUS_MAGIC 0x52320000U
+#define RX_STATUS_FAULT 4U
+static u32 rx_status(void) { return Xil_In32(RX_GPIO_BASE + 8U); }
+static void rx_disable(void) {
+    Xil_Out32(RX_GPIO_BASE, 0U);
+    Xil_Out32(RX_GPIO_BASE + 4U, 0U);
+}
+static int rx_preflight(void) {
+    rx_disable();
+    if ((rx_status() & 0xffff0000U) != RX_STATUS_MAGIC) {
+        xil_printf("RX control absent: load the new control bitstream first. status=%08X\r\n",rx_status());
+        return XST_FAILURE;
+    }
+    return XST_SUCCESS;
+}
+static int rx_enable(void) {
+    unsigned i;
+    rx_disable();
+    usleep(1000);
+    Xil_Out32(RX_GPIO_BASE, 1U);
+    for(i=0;i<3000;i++) {
+        u32 s=rx_status();
+        if(s & RX_STATUS_FAULT) break;
+        if((s & 0x1bU)==0x1bU) return XST_SUCCESS;
+        usleep(1000);
+    }
+    xil_printf("RX admission failed: status=%08X (bit0 link,1 running,2 fault,3 resetn,4 arm)\r\n",rx_status());
+    rx_disable();
+    return XST_FAILURE;
+}
+static int rx_check(XAxiVdma *left, XAxiVdma *right) {
+    u32 s=rx_status();
+    u32 le=XAxiVdma_GetDmaChannelErrors(left,XAXIVDMA_WRITE);
+    u32 re=XAxiVdma_GetDmaChannelErrors(right,XAXIVDMA_WRITE);
+    if((s & 0x1fU)!=0x1bU || le || re) {
+        xil_printf("RX error detected: status=%08X left_err=%08X right_err=%08X\r\n",s,le,re);
+        /* Observation hold only; do not clear errors or process error frames. */
+        if ((s & 0x1fU)==0x1bU && (le || re)) {
+            unsigned seconds;
+            xil_printf("VDMA error: holding admission for up to 60 seconds for ILA.\r\n");
+            for (seconds=0; seconds<60U; ++seconds) {
+                usleep(1000000U);
+                if ((rx_status() & 0x1fU)!=0x1bU) {
+                    xil_printf("ILA hold ended early: RX hardware status=%08X\r\n",rx_status());
+                    break;
+                }
+                if ((seconds+1U)%10U==0U)
+                    xil_printf("ILA hold: %d seconds remaining\r\n",60U-seconds-1U);
+            }
+            xil_printf("ILA observation finished; stopping RX.\r\n");
+        }
+        rx_disable();
+        XAxiVdma_DmaStop(left,XAXIVDMA_WRITE);
+        XAxiVdma_DmaStop(right,XAXIVDMA_WRITE);
+        return XST_FAILURE;
+    }
+    return XST_SUCCESS;
+}
+
+/* Diagnostic only: no frames are published after a clear attempt. */
+static int rx_check_capture(XAxiVdma *left, XAxiVdma *right) {
+    static int attempted=0;
+    u32 le=XAxiVdma_GetDmaChannelErrors(left,XAXIVDMA_WRITE);
+    u32 re=XAxiVdma_GetDmaChannelErrors(right,XAXIVDMA_WRITE);
+    if(!attempted && (le||re) && !((le|re)&~XAXIVDMA_SR_ERR_LSZ_LESS_MASK) && (rx_status()&31U)==27U) {
+        u32 ls=XAxiVdma_ReadReg(left->BaseAddr,0x34U),rs=XAxiVdma_ReadReg(right->BaseAddr,0x34U);
+        u32 pl,pr,cl,cr,nl=0,nr=0,sec,last=0;
+        XTime start,now;
+        int a=XST_SUCCESS,b=XST_SUCCESS;
+        attempted=1;
+        xil_printf("ONCE before clear: left=%08X right=%08X left_SR=%08X right_SR=%08X\r\n",le,re,ls,rs);
+        if((ls|rs)&XAXIVDMA_SR_HALTED_MASK) {
+            xil_printf("ONCE skipped: halted channel, no blind restart.\r\n");
+            return rx_check(left,right);
+        }
+        if(le)a=XAxiVdma_ClearDmaChannelErrors(left,XAXIVDMA_WRITE,XAXIVDMA_SR_ERR_LSZ_LESS_MASK);
+        if(re)b=XAxiVdma_ClearDmaChannelErrors(right,XAXIVDMA_WRITE,XAXIVDMA_SR_ERR_LSZ_LESS_MASK);
+        if(a!=XST_SUCCESS || b!=XST_SUCCESS){xil_printf("ONCE clear API failed\r\n");goto stop_diag;}
+        pl=XAxiVdma_CurrFrameStore(left,XAXIVDMA_WRITE);pr=XAxiVdma_CurrFrameStore(right,XAXIVDMA_WRITE);
+        XTime_GetTime(&start);
+        xil_printf("ONCE cleared: observe 60s, matching blocked.\r\n");
+        for(;;){
+            XTime_GetTime(&now);sec=(u32)((now-start)/COUNTS_PER_SECOND);
+            le=XAxiVdma_GetDmaChannelErrors(left,XAXIVDMA_WRITE);re=XAxiVdma_GetDmaChannelErrors(right,XAXIVDMA_WRITE);
+            if(le||re){
+                xil_printf("ONCE RECURRED at %d s: left=%08X right=%08X; no second clear\r\n",sec,le,re);
+                return rx_check(left,right);
+            }
+            ls=XAxiVdma_ReadReg(left->BaseAddr,0x34U);rs=XAxiVdma_ReadReg(right->BaseAddr,0x34U);
+            if((rx_status()&31U)!=27U || ((ls|rs)&XAXIVDMA_SR_HALTED_MASK)){
+                xil_printf("ONCE aborted: control=%08X left_SR=%08X right_SR=%08X\r\n",rx_status(),ls,rs);goto stop_diag;
+            }
+            cl=XAxiVdma_CurrFrameStore(left,XAXIVDMA_WRITE);cr=XAxiVdma_CurrFrameStore(right,XAXIVDMA_WRITE);
+            if(cl!=pl){++nl;pl=cl;}if(cr!=pr){++nr;pr=cr;}
+            if(sec>=last+10U){last=sec;xil_printf("ONCE %d s: slot changes L=%d R=%d errors=0\r\n",sec,nl,nr);}
+            if(sec>=60U)break;
+            usleep(100U);
+        }
+        if(nl>=2U && nr>=2U)xil_printf("ONCE 60s clean, both slots advanced: transient suspected, pixel integrity unverified.\r\n");
+        else xil_printf("ONCE inconclusive: insufficient frame progress.\r\n");
+stop_diag:
+        xil_printf("ONCE diagnostic ended; no frames sent to matcher.\r\n");
+        rx_disable();XAxiVdma_DmaStop(left,XAXIVDMA_WRITE);XAxiVdma_DmaStop(right,XAXIVDMA_WRITE);return XST_FAILURE;
+    }
+    return rx_check(left,right);
+}
+
+#endif

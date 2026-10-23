@@ -1,0 +1,1036 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x1FE022D682C8DA2A",
+      "device": "xc7a35tfgg484-2",
+      "gen_directory": "../../../../stereo_match_fpga1.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2"
+    },
+    "design_tree": {
+      "dual_ov5640_init_0": "",
+      "alinx_ov5640_0": "",
+      "alinx_ov5640_1": "",
+      "axis_frame_encoder_0": "",
+      "axis_dwidth_converter_0": "",
+      "axis_dwidth_converter_1": "",
+      "system_ila_0": "",
+      "xlconstant_0": "",
+      "clk_wiz_0": "",
+      "proc_sys_reset_0": "",
+      "aurora_8b10b_0": "",
+      "axis_clock_converter_0": "",
+      "xlconstant_1": "",
+      "xlconstant_2": "",
+      "aurora_reset_ctrl_0": "",
+      "xlconstant_3": "",
+      "system_ila_1": "",
+      "xlconstant_4": "",
+      "axis_tx_reset_ctrl_0": ""
+    },
+    "interface_ports": {
+      "GT_DIFF_REFCLK1_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
+        "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "125000000"
+          }
+        },
+        "port_maps": {
+          "CLK_N": {
+            "physical_name": "GT_DIFF_REFCLK1_0_clk_n",
+            "direction": "I"
+          },
+          "CLK_P": {
+            "physical_name": "GT_DIFF_REFCLK1_0_clk_p",
+            "direction": "I"
+          }
+        }
+      },
+      "GT_SERIAL_RX_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_RX:1.0",
+        "vlnv": "xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_RX_rtl:1.0",
+        "port_maps": {
+          "RXN": {
+            "physical_name": "GT_SERIAL_RX_0_rxn",
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "RXP": {
+            "physical_name": "GT_SERIAL_RX_0_rxp",
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      },
+      "GT_SERIAL_TX_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_TX:1.0",
+        "vlnv": "xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_TX_rtl:1.0",
+        "port_maps": {
+          "TXN": {
+            "physical_name": "GT_SERIAL_TX_0_txn",
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "TXP": {
+            "physical_name": "GT_SERIAL_TX_0_txp",
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "ports": {
+      "cam0_rst_n_0": {
+        "type": "rst",
+        "direction": "O"
+      },
+      "cam0_scl_0": {
+        "direction": "IO"
+      },
+      "cam0_sda_0": {
+        "direction": "IO"
+      },
+      "cam1_rst_n_0": {
+        "type": "rst",
+        "direction": "O"
+      },
+      "cam1_scl_0": {
+        "direction": "IO"
+      },
+      "cam1_sda_0": {
+        "direction": "IO"
+      },
+      "cmos_d_0": {
+        "direction": "I",
+        "left": "9",
+        "right": "0"
+      },
+      "cmos_href_0": {
+        "direction": "I"
+      },
+      "cmos_pclk_0": {
+        "direction": "I"
+      },
+      "cmos_vsync_0": {
+        "direction": "I"
+      },
+      "cmos_d_1": {
+        "direction": "I",
+        "left": "9",
+        "right": "0"
+      },
+      "cmos_href_1": {
+        "direction": "I"
+      },
+      "cmos_pclk_1": {
+        "direction": "I"
+      },
+      "cmos_vsync_1": {
+        "direction": "I"
+      },
+      "rst_n": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      },
+      "sys_clk_p": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "200000000"
+          }
+        }
+      },
+      "sys_clk_n": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "200000000"
+          }
+        }
+      }
+    },
+    "components": {
+      "dual_ov5640_init_0": {
+        "vlnv": "xilinx.com:user:dual_ov5640_init:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_dual_ov5640_init_0_0",
+        "xci_path": "ip\\design_1_dual_ov5640_init_0_0\\design_1_dual_ov5640_init_0_0.xci",
+        "inst_hier_path": "dual_ov5640_init_0"
+      },
+      "alinx_ov5640_0": {
+        "vlnv": "xilinx.com:user:alinx_ov5640:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_alinx_ov5640_0_0",
+        "xci_path": "ip\\design_1_alinx_ov5640_0_0\\design_1_alinx_ov5640_0_0.xci",
+        "inst_hier_path": "alinx_ov5640_0"
+      },
+      "alinx_ov5640_1": {
+        "vlnv": "xilinx.com:user:alinx_ov5640:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_alinx_ov5640_0_1",
+        "xci_path": "ip\\design_1_alinx_ov5640_0_1\\design_1_alinx_ov5640_0_1.xci",
+        "inst_hier_path": "alinx_ov5640_1"
+      },
+      "axis_frame_encoder_0": {
+        "vlnv": "xilinx.com:user:axis_frame_encoder:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_axis_frame_encoder_0_0",
+        "xci_path": "ip\\design_1_axis_frame_encoder_0_0\\design_1_axis_frame_encoder_0_0.xci",
+        "inst_hier_path": "axis_frame_encoder_0"
+      },
+      "axis_dwidth_converter_0": {
+        "vlnv": "xilinx.com:ip:axis_dwidth_converter:1.1",
+        "ip_revision": "28",
+        "xci_name": "design_1_axis_dwidth_converter_0_0",
+        "xci_path": "ip\\design_1_axis_dwidth_converter_0_0\\design_1_axis_dwidth_converter_0_0.xci",
+        "inst_hier_path": "axis_dwidth_converter_0",
+        "parameters": {
+          "HAS_TKEEP": {
+            "value": "1"
+          },
+          "HAS_TLAST": {
+            "value": "1"
+          },
+          "M_TDATA_NUM_BYTES": {
+            "value": "4"
+          },
+          "S_TDATA_NUM_BYTES": {
+            "value": "2"
+          },
+          "TUSER_BITS_PER_BYTE": {
+            "value": "1"
+          }
+        }
+      },
+      "axis_dwidth_converter_1": {
+        "vlnv": "xilinx.com:ip:axis_dwidth_converter:1.1",
+        "ip_revision": "28",
+        "xci_name": "design_1_axis_dwidth_converter_0_1",
+        "xci_path": "ip\\design_1_axis_dwidth_converter_0_1\\design_1_axis_dwidth_converter_0_1.xci",
+        "inst_hier_path": "axis_dwidth_converter_1",
+        "parameters": {
+          "HAS_TKEEP": {
+            "value": "1"
+          },
+          "HAS_TLAST": {
+            "value": "1"
+          },
+          "M_TDATA_NUM_BYTES": {
+            "value": "4"
+          },
+          "S_TDATA_NUM_BYTES": {
+            "value": "2"
+          },
+          "TUSER_BITS_PER_BYTE": {
+            "value": "1"
+          }
+        }
+      },
+      "system_ila_0": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "ip_revision": "15",
+        "xci_name": "design_1_system_ila_0_0",
+        "xci_path": "ip\\design_1_system_ila_0_0\\design_1_system_ila_0_0.xci",
+        "inst_hier_path": "system_ila_0",
+        "parameters": {
+          "C_MON_TYPE": {
+            "value": "NATIVE"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "9"
+          },
+          "C_PROBE0_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE1_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE2_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE3_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE4_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE5_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE6_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE7_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE8_TYPE": {
+            "value": "0"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "8",
+        "xci_name": "design_1_xlconstant_0_0",
+        "xci_path": "ip\\design_1_xlconstant_0_0\\design_1_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "13",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "xci_path": "ip\\design_1_clk_wiz_0_0\\design_1_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "50.0"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "129.198"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "89.971"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "50.000"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "5.000"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "5.000"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "20.000"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "200.000"
+          },
+          "PRIM_SOURCE": {
+            "value": "Differential_clock_capable_pin"
+          },
+          "RESET_PORT": {
+            "value": "resetn"
+          },
+          "RESET_TYPE": {
+            "value": "ACTIVE_LOW"
+          },
+          "USE_LOCKED": {
+            "value": "true"
+          }
+        }
+      },
+      "proc_sys_reset_0": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "ip_revision": "14",
+        "xci_name": "design_1_proc_sys_reset_0_0",
+        "xci_path": "ip\\design_1_proc_sys_reset_0_0\\design_1_proc_sys_reset_0_0.xci",
+        "inst_hier_path": "proc_sys_reset_0"
+      },
+      "aurora_8b10b_0": {
+        "vlnv": "xilinx.com:ip:aurora_8b10b:11.1",
+        "ip_revision": "19",
+        "xci_name": "design_1_aurora_8b10b_0_0",
+        "xci_path": "ip\\design_1_aurora_8b10b_0_0\\design_1_aurora_8b10b_0_0.xci",
+        "inst_hier_path": "aurora_8b10b_0",
+        "parameters": {
+          "C_DRP_IF": {
+            "value": "false"
+          },
+          "C_LANE_WIDTH": {
+            "value": "4"
+          },
+          "C_LINE_RATE": {
+            "value": "2.5"
+          },
+          "Dataflow_Config": {
+            "value": "Duplex"
+          },
+          "SINGLEEND_INITCLK": {
+            "value": "true"
+          },
+          "SupportLevel": {
+            "value": "1"
+          }
+        }
+      },
+      "axis_clock_converter_0": {
+        "vlnv": "xilinx.com:ip:axis_clock_converter:1.1",
+        "ip_revision": "30",
+        "xci_name": "design_1_axis_clock_converter_0_0",
+        "xci_path": "ip\\design_1_axis_clock_converter_0_0\\design_1_axis_clock_converter_0_0.xci",
+        "inst_hier_path": "axis_clock_converter_0",
+        "parameters": {
+          "HAS_TKEEP": {
+            "value": "1"
+          },
+          "HAS_TLAST": {
+            "value": "1"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "4"
+          }
+        }
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "8",
+        "xci_name": "design_1_xlconstant_1_0",
+        "xci_path": "ip\\design_1_xlconstant_1_0\\design_1_xlconstant_1_0.xci",
+        "inst_hier_path": "xlconstant_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          },
+          "CONST_WIDTH": {
+            "value": "3"
+          }
+        }
+      },
+      "xlconstant_2": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "8",
+        "xci_name": "design_1_xlconstant_2_0",
+        "xci_path": "ip\\design_1_xlconstant_2_0\\design_1_xlconstant_2_0.xci",
+        "inst_hier_path": "xlconstant_2",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      },
+      "aurora_reset_ctrl_0": {
+        "vlnv": "xilinx.com:user:aurora_reset_ctrl:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_aurora_reset_ctrl_0_0",
+        "xci_path": "ip\\design_1_aurora_reset_ctrl_0_0\\design_1_aurora_reset_ctrl_0_0.xci",
+        "inst_hier_path": "aurora_reset_ctrl_0"
+      },
+      "xlconstant_3": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "8",
+        "xci_name": "design_1_xlconstant_3_0",
+        "xci_path": "ip\\design_1_xlconstant_3_0\\design_1_xlconstant_3_0.xci",
+        "inst_hier_path": "xlconstant_3",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      },
+      "system_ila_1": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "ip_revision": "15",
+        "xci_name": "design_1_system_ila_1_1",
+        "xci_path": "ip\\design_1_system_ila_1_1\\design_1_system_ila_1_1.xci",
+        "inst_hier_path": "system_ila_1",
+        "parameters": {
+          "C_MON_TYPE": {
+            "value": "NATIVE"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "9"
+          },
+          "C_PROBE0_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE1_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE2_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE3_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE4_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE5_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE6_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE7_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE8_TYPE": {
+            "value": "0"
+          }
+        }
+      },
+      "xlconstant_4": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "8",
+        "xci_name": "design_1_xlconstant_4_0",
+        "xci_path": "ip\\design_1_xlconstant_4_0\\design_1_xlconstant_4_0.xci",
+        "inst_hier_path": "xlconstant_4",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "15"
+          },
+          "CONST_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "axis_tx_reset_ctrl_0": {
+        "vlnv": "xilinx.com:user:axis_tx_reset_ctrl:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_axis_tx_reset_ctrl_0_0",
+        "xci_path": "ip\\design_1_axis_tx_reset_ctrl_0_0\\design_1_axis_tx_reset_ctrl_0_0.xci",
+        "inst_hier_path": "axis_tx_reset_ctrl_0"
+      }
+    },
+    "interface_nets": {
+      "GT_DIFF_REFCLK1_0_1": {
+        "interface_ports": [
+          "GT_DIFF_REFCLK1_0",
+          "aurora_8b10b_0/GT_DIFF_REFCLK1"
+        ]
+      },
+      "GT_SERIAL_RX_0_1": {
+        "interface_ports": [
+          "GT_SERIAL_RX_0",
+          "aurora_8b10b_0/GT_SERIAL_RX"
+        ]
+      },
+      "alinx_ov5640_0_m_axis_video": {
+        "interface_ports": [
+          "alinx_ov5640_0/m_axis_video",
+          "axis_dwidth_converter_0/S_AXIS"
+        ]
+      },
+      "alinx_ov5640_1_m_axis_video": {
+        "interface_ports": [
+          "alinx_ov5640_1/m_axis_video",
+          "axis_dwidth_converter_1/S_AXIS"
+        ]
+      },
+      "aurora_8b10b_0_GT_SERIAL_TX": {
+        "interface_ports": [
+          "GT_SERIAL_TX_0",
+          "aurora_8b10b_0/GT_SERIAL_TX"
+        ]
+      },
+      "axis_clock_converter_0_M_AXIS": {
+        "interface_ports": [
+          "axis_clock_converter_0/M_AXIS",
+          "aurora_8b10b_0/USER_DATA_S_AXI_TX"
+        ]
+      },
+      "axis_dwidth_converter_0_M_AXIS": {
+        "interface_ports": [
+          "axis_dwidth_converter_0/M_AXIS",
+          "axis_frame_encoder_0/s_axis_0"
+        ]
+      },
+      "axis_dwidth_converter_1_M_AXIS": {
+        "interface_ports": [
+          "axis_dwidth_converter_1/M_AXIS",
+          "axis_frame_encoder_0/s_axis_1"
+        ]
+      },
+      "axis_frame_encoder_0_m_axis": {
+        "interface_ports": [
+          "axis_frame_encoder_0/m_axis",
+          "axis_clock_converter_0/S_AXIS"
+        ]
+      }
+    },
+    "nets": {
+      "Net": {
+        "ports": [
+          "cam0_scl_0",
+          "dual_ov5640_init_0/cam0_scl"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "cam0_sda_0",
+          "dual_ov5640_init_0/cam0_sda"
+        ]
+      },
+      "Net2": {
+        "ports": [
+          "cam1_scl_0",
+          "dual_ov5640_init_0/cam1_scl"
+        ]
+      },
+      "Net3": {
+        "ports": [
+          "cam1_sda_0",
+          "dual_ov5640_init_0/cam1_sda"
+        ]
+      },
+      "active_camera": {
+        "ports": [
+          "dual_ov5640_init_0/active_camera",
+          "system_ila_0/probe0"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "aurora_8b10b_0_sys_reset_out": {
+        "ports": [
+          "aurora_8b10b_0/sys_reset_out",
+          "axis_tx_reset_ctrl_0/sys_reset_out"
+        ]
+      },
+      "aurora_8b10b_0_user_clk_out": {
+        "ports": [
+          "aurora_8b10b_0/user_clk_out",
+          "axis_clock_converter_0/m_axis_aclk",
+          "aurora_reset_ctrl_0/user_clk",
+          "system_ila_1/clk",
+          "axis_tx_reset_ctrl_0/user_clk"
+        ]
+      },
+      "aurora_reset_ctrl_0_aurora_gt_reset": {
+        "ports": [
+          "aurora_reset_ctrl_0/aurora_gt_reset",
+          "aurora_8b10b_0/gt_reset"
+        ]
+      },
+      "aurora_reset_ctrl_0_aurora_reset": {
+        "ports": [
+          "aurora_reset_ctrl_0/aurora_reset",
+          "aurora_8b10b_0/reset"
+        ]
+      },
+      "axis_tx_reset_ctrl_0_m_axis_aresetn": {
+        "ports": [
+          "axis_tx_reset_ctrl_0/m_axis_aresetn",
+          "axis_clock_converter_0/m_axis_aresetn"
+        ]
+      },
+      "busy": {
+        "ports": [
+          "dual_ov5640_init_0/busy",
+          "system_ila_0/probe1"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "camera_done": {
+        "ports": [
+          "dual_ov5640_init_0/camera_done",
+          "system_ila_0/probe2",
+          "axis_tx_reset_ctrl_0/camera_done"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "camera_error": {
+        "ports": [
+          "dual_ov5640_init_0/camera_error",
+          "system_ila_0/probe3",
+          "axis_tx_reset_ctrl_0/camera_error"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "channel_up": {
+        "ports": [
+          "aurora_8b10b_0/channel_up",
+          "system_ila_1/probe0",
+          "axis_tx_reset_ctrl_0/channel_up"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "clk_wiz_0_locked": {
+        "ports": [
+          "clk_wiz_0/locked",
+          "proc_sys_reset_0/dcm_locked",
+          "aurora_reset_ctrl_0/clk_locked"
+        ]
+      },
+      "cmos_d_0_1": {
+        "ports": [
+          "cmos_d_0",
+          "alinx_ov5640_0/cmos_d"
+        ]
+      },
+      "cmos_d_1_1": {
+        "ports": [
+          "cmos_d_1",
+          "alinx_ov5640_1/cmos_d"
+        ]
+      },
+      "cmos_href_0_1": {
+        "ports": [
+          "cmos_href_0",
+          "alinx_ov5640_0/cmos_href"
+        ]
+      },
+      "cmos_href_1_1": {
+        "ports": [
+          "cmos_href_1",
+          "alinx_ov5640_1/cmos_href"
+        ]
+      },
+      "cmos_pclk_0_1": {
+        "ports": [
+          "cmos_pclk_0",
+          "alinx_ov5640_0/cmos_pclk"
+        ]
+      },
+      "cmos_pclk_1_1": {
+        "ports": [
+          "cmos_pclk_1",
+          "alinx_ov5640_1/cmos_pclk"
+        ]
+      },
+      "cmos_vsync_0_1": {
+        "ports": [
+          "cmos_vsync_0",
+          "alinx_ov5640_0/cmos_vsync"
+        ]
+      },
+      "cmos_vsync_1_1": {
+        "ports": [
+          "cmos_vsync_1",
+          "alinx_ov5640_1/cmos_vsync"
+        ]
+      },
+      "done": {
+        "ports": [
+          "dual_ov5640_init_0/done",
+          "system_ila_0/probe4"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "dual_ov5640_init_0_cam0_rst_n": {
+        "ports": [
+          "dual_ov5640_init_0/cam0_rst_n",
+          "cam0_rst_n_0"
+        ]
+      },
+      "dual_ov5640_init_0_cam1_rst_n": {
+        "ports": [
+          "dual_ov5640_init_0/cam1_rst_n",
+          "cam1_rst_n_0"
+        ]
+      },
+      "error_byte": {
+        "ports": [
+          "dual_ov5640_init_0/error_byte",
+          "system_ila_0/probe5"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "error_code": {
+        "ports": [
+          "dual_ov5640_init_0/error_code",
+          "system_ila_0/probe6"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "failed_reg": {
+        "ports": [
+          "dual_ov5640_init_0/failed_reg",
+          "system_ila_0/probe7"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "frame_err": {
+        "ports": [
+          "aurora_8b10b_0/frame_err",
+          "system_ila_1/probe1"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "hard_err": {
+        "ports": [
+          "aurora_8b10b_0/hard_err",
+          "system_ila_1/probe2"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "lane_up": {
+        "ports": [
+          "aurora_8b10b_0/lane_up",
+          "system_ila_1/probe3"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "m_axis_video_aclk_0_1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "alinx_ov5640_0/m_axis_video_aclk",
+          "alinx_ov5640_1/m_axis_video_aclk",
+          "axis_dwidth_converter_0/aclk",
+          "axis_dwidth_converter_1/aclk",
+          "axis_frame_encoder_0/clk",
+          "dual_ov5640_init_0/clk",
+          "system_ila_0/clk",
+          "proc_sys_reset_0/slowest_sync_clk",
+          "aurora_8b10b_0/init_clk_in",
+          "aurora_8b10b_0/drpclk_in",
+          "aurora_reset_ctrl_0/init_clk",
+          "axis_clock_converter_0/s_axis_aclk"
+        ]
+      },
+      "pll_not_locked_out": {
+        "ports": [
+          "aurora_8b10b_0/pll_not_locked_out",
+          "system_ila_1/probe4"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "proc_sys_reset_0_peripheral_aresetn": {
+        "ports": [
+          "proc_sys_reset_0/peripheral_aresetn",
+          "dual_ov5640_init_0/rst_n",
+          "alinx_ov5640_0/m_axis_video_aresetn",
+          "alinx_ov5640_1/m_axis_video_aresetn",
+          "axis_dwidth_converter_0/aresetn",
+          "axis_dwidth_converter_1/aresetn",
+          "axis_frame_encoder_0/rst_n",
+          "aurora_reset_ctrl_0/rst_n",
+          "axis_clock_converter_0/s_axis_aresetn",
+          "axis_tx_reset_ctrl_0/rst_n"
+        ]
+      },
+      "reg_index": {
+        "ports": [
+          "dual_ov5640_init_0/reg_index",
+          "system_ila_0/probe8"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "rst_n_1": {
+        "ports": [
+          "rst_n",
+          "clk_wiz_0/resetn",
+          "proc_sys_reset_0/ext_reset_in"
+        ]
+      },
+      "rx_resetdone_out": {
+        "ports": [
+          "aurora_8b10b_0/rx_resetdone_out",
+          "system_ila_1/probe5"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "soft_err": {
+        "ports": [
+          "aurora_8b10b_0/soft_err",
+          "system_ila_1/probe6"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "sys_clk_n_1": {
+        "ports": [
+          "sys_clk_n",
+          "clk_wiz_0/clk_in1_n"
+        ]
+      },
+      "sys_clk_p_1": {
+        "ports": [
+          "sys_clk_p",
+          "clk_wiz_0/clk_in1_p"
+        ]
+      },
+      "tx_lock": {
+        "ports": [
+          "aurora_8b10b_0/tx_lock",
+          "system_ila_1/probe7"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "tx_resetdone_out": {
+        "ports": [
+          "aurora_8b10b_0/tx_resetdone_out",
+          "system_ila_1/probe8"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "dual_ov5640_init_0/restart",
+          "proc_sys_reset_0/aux_reset_in",
+          "proc_sys_reset_0/mb_debug_sys_rst"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "aurora_8b10b_0/loopback"
+        ]
+      },
+      "xlconstant_2_dout": {
+        "ports": [
+          "xlconstant_2/dout",
+          "aurora_8b10b_0/power_down"
+        ]
+      },
+      "xlconstant_3_dout": {
+        "ports": [
+          "xlconstant_3/dout",
+          "aurora_reset_ctrl_0/restart_req"
+        ]
+      },
+      "xlconstant_4_dout": {
+        "ports": [
+          "xlconstant_4/dout",
+          "axis_clock_converter_0/s_axis_tkeep"
+        ]
+      }
+    }
+  }
+}

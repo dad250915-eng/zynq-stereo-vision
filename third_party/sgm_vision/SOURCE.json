@@ -1,0 +1,13 @@
+{
+  "source": "https://github.com/Xilinx/Vitis_Libraries/tree/v2023.2_rel/vision/L1",
+  "license": "Apache-2.0; original notices retained",
+  "sha256": {
+    "xf_sgbm.hpp": "01292f0569acbd838f59d0b5591b2ef4e007cb57ff7d2b7ed12bc0f00ff0bcd7",
+    "common\\xf_common.hpp": "39e68e8a12117fa867febdd3b0069c52f9681a9ff411863d9f02dc786bb444b8",
+    "common\\xf_params.hpp": "2368a1cbece6844a12777986fd9fb0227fff454951bb9c11c8b2e38775615048",
+    "common\\xf_structs.hpp": "4950b5df2b4ccd225f6fcb83d24310fa22ef634b67398c30ab6666a2bca154e8",
+    "common\\xf_types.hpp": "e2e656bd7e4de1f413597b7787b9495a5698d582dc21f03ef09ef78d86eb526b",
+    "common\\xf_utility.hpp": "c3e681a8798122784eddda47531341a6c26b777a9d3d91dc1b303777d4e63b6c",
+    "common\\xf_video_mem.hpp": "7cd9ff4d62440a8d7cde6b3fc3ded70f8dc04a165b0b61c1d630ae1e9b8bd2c8"
+  }
+}

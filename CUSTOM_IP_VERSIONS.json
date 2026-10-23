@@ -1,0 +1,176 @@
+[
+  {
+    "board": "fpga1_bd",
+    "instance": "dual_ov5640_init_0",
+    "vlnv": "xilinx.com:user:dual_ov5640_init:1.0",
+    "kind": "rtl"
+  },
+  {
+    "board": "fpga1_bd",
+    "instance": "alinx_ov5640_0",
+    "vlnv": "xilinx.com:user:alinx_ov5640:1.0",
+    "kind": "rtl"
+  },
+  {
+    "board": "fpga1_bd",
+    "instance": "aurora_reset_ctrl_0",
+    "vlnv": "xilinx.com:user:aurora_reset_ctrl:1.0",
+    "kind": "rtl"
+  },
+  {
+    "board": "fpga1_bd",
+    "instance": "axis_tx_reset_ctrl_0",
+    "vlnv": "xilinx.com:user:axis_tx_reset_ctrl:1.0",
+    "kind": "rtl"
+  },
+  {
+    "board": "fpga1_bd",
+    "instance": "axis_line_monitor_0",
+    "vlnv": "user.org:user:axis_line_monitor:1.0",
+    "kind": "rtl"
+  },
+  {
+    "board": "fpga1_bd",
+    "instance": "axis_frame_encoder_0",
+    "vlnv": "xilinx.com:user:axis_frame_encoder:1.0",
+    "kind": "rtl"
+  },
+  {
+    "board": "fpga1_bd",
+    "instance": "axis_frame_sender_0",
+    "vlnv": "xilinx.com:user:axis_frame_sender:1.0",
+    "kind": "rtl"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "axi_dynclk_0",
+    "vlnv": "digilentinc.com:ip:axi_dynclk:1.2",
+    "kind": "rtl"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "v_osd_replacement_0",
+    "vlnv": "xilinx.com:user:v_osd_replacement:1.0",
+    "kind": "rtl"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "remap_generate_v1_0_0",
+    "vlnv": "xilinx.com:user:remap_generate_v1_0:1.0",
+    "kind": "rtl"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "remap_operate_pipeli_0",
+    "vlnv": "xilinx.com:user:remap_operate_pipeline_v1_0:1.0",
+    "kind": "rtl"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "axis_frame_decoder_0",
+    "vlnv": "xilinx.com:user:axis_frame_decoder:1.0",
+    "kind": "rtl"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "aurora_reset_ctrl_0",
+    "vlnv": "xilinx.com:user:aurora_reset_ctrl:1.0",
+    "kind": "rtl"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "aurora_receive_reset_0",
+    "vlnv": "xilinx.com:user:aurora_receive_reset:1.0",
+    "kind": "rtl"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "DVI_Transmitter_0",
+    "vlnv": "openedv.com:user:DVI_Transmitter:1.0",
+    "kind": "rtl"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "axis_line_monitor_0",
+    "vlnv": "user.org:user:axis_line_monitor:1.0",
+    "kind": "rtl"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "fpga2_ctrl_reset_0",
+    "vlnv": "xilinx.com:user:fpga2_ctrl_reset:1.0",
+    "kind": "rtl"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "roi_a_gray",
+    "vlnv": "stereo.local:user:roi_a_gray:1.0",
+    "kind": "hls"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "roi_b_target",
+    "vlnv": "stereo.local:user:roi_b_target:1.0",
+    "kind": "hls"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "roi_c_contour",
+    "vlnv": "stereo.local:user:roi_c_contour:1.0",
+    "kind": "hls"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "roi_d_overlay",
+    "vlnv": "stereo.local:user:roi_d_overlay:1.0",
+    "kind": "hls"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "roi_e_region",
+    "vlnv": "stereo.local:user:roi_e_region:1.0",
+    "kind": "hls"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "roi_g_supply",
+    "vlnv": "stereo.local:user:roi_g_supply:1.0",
+    "kind": "hls"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "roi_h_sgm",
+    "vlnv": "stereo.local:user:roi_h_sgm:1.0",
+    "kind": "hls"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "roi_i_measure",
+    "vlnv": "stereo.local:user:roi_i_measure:1.0",
+    "kind": "hls"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "roi_j_display",
+    "vlnv": "stereo.local:user:roi_j_display:1.0",
+    "kind": "hls"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "rx_admission_ctrl_0",
+    "vlnv": "stereo.local:user:rx_admission_ctrl_roi:1.0",
+    "kind": "rtl"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "roi_k_depth",
+    "vlnv": "stereo.local:user:roi_k_depth:1.1",
+    "kind": "hls"
+  },
+  {
+    "board": "fpga2_bd",
+    "instance": "roi_mode_button_0",
+    "vlnv": "stereo.local:user:roi_mode_button:1.1",
+    "kind": "rtl"
+  }
+]

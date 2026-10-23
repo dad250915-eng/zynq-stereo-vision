@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+# Logs and generated files
+logs/
+*.log
+*.log.*
+*.jou
+/build/
+.Xil/
+*.dcp
+*.str
+*.wdb
+# Local settings
+.env
+.env.*
+!.env.example
+Thumbs.db
+.DS_Store

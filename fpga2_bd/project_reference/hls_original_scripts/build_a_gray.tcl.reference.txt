@@ -1,0 +1,10 @@
+set ip {D:/vivado/vivado-library-master/ip/roi_a_gray}
+open_project {E:/fpga_projects/stereo_match_fpga2/roi_architecture/hls/a_gray}
+set_top roi_a_gray
+add_files $ip/src/roi_a_gray.cpp -cflags {-std=c++14 -IE:/fpga_projects/stereo_match_fpga2/roi_architecture/reference/color/third_party/vision/include -IE:/fpga_projects/stereo_match_fpga2/roi_architecture/reference/sgm_vision}
+open_solution solution -flow_target vivado
+set_part xc7z035ffg900-2
+create_clock -period 10 -name default
+csynth_design
+export_design -format ip_catalog -rtl verilog -vendor stereo.local -library user -version 1.0 -ipname roi_a_gray -output $ip/package.zip
+exit

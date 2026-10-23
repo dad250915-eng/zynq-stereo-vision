@@ -1,0 +1,53 @@
+#ifndef RX_CONTROL_H
+#define RX_CONTROL_H
+#include "xparameters.h"
+#include "xil_io.h"
+#include "xil_printf.h"
+#include "xstatus.h"
+#include "sleep.h"
+#include "xaxivdma.h"
+#define RX_GPIO_BASE XPAR_AXI_GPIO_0_BASEADDR
+#define RX_STATUS_MAGIC 0x52320000U
+#define RX_STATUS_FAULT 4U
+static u32 rx_status(void) { return Xil_In32(RX_GPIO_BASE + 8U); }
+static void rx_disable(void) {
+    Xil_Out32(RX_GPIO_BASE, 0U);
+    Xil_Out32(RX_GPIO_BASE + 4U, 0U);
+}
+static int rx_preflight(void) {
+    rx_disable();
+    if ((rx_status() & 0xffff0000U) != RX_STATUS_MAGIC) {
+        xil_printf("RX control absent: load the new control bitstream first. status=%08X\r\n",rx_status());
+        return XST_FAILURE;
+    }
+    return XST_SUCCESS;
+}
+static int rx_enable(void) {
+    unsigned i;
+    rx_disable();
+    usleep(1000);
+    Xil_Out32(RX_GPIO_BASE, 1U);
+    for(i=0;i<3000;i++) {
+        u32 s=rx_status();
+        if(s & RX_STATUS_FAULT) break;
+        if((s & 0x1bU)==0x1bU) return XST_SUCCESS;
+        usleep(1000);
+    }
+    xil_printf("RX admission failed: status=%08X (bit0 link,1 running,2 fault,3 resetn,4 arm)\r\n",rx_status());
+    rx_disable();
+    return XST_FAILURE;
+}
+static int rx_check(XAxiVdma *left, XAxiVdma *right) {
+    u32 s=rx_status();
+    u32 le=XAxiVdma_GetDmaChannelErrors(left,XAXIVDMA_WRITE);
+    u32 re=XAxiVdma_GetDmaChannelErrors(right,XAXIVDMA_WRITE);
+    if((s & 0x1fU)!=0x1bU || le || re) {
+        xil_printf("RX stopped: status=%08X left_err=%08X right_err=%08X\r\n",s,le,re);
+        rx_disable();
+        XAxiVdma_DmaStop(left,XAXIVDMA_WRITE);
+        XAxiVdma_DmaStop(right,XAXIVDMA_WRITE);
+        return XST_FAILURE;
+    }
+    return XST_SUCCESS;
+}
+#endif

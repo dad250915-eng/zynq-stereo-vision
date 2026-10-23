@@ -1,0 +1,9 @@
+{
+  "calibration_id": "20261012-user-7groups",
+  "labels": ["A", "B", "C", "D", "E", "F", "G"],
+  "units": "mm",
+  "coordinate_model": "j5-reversed-v1",
+  "camera_points": [[-5,-38,406],[-5,-39,434],[-44,-38,410],[-41,-36,381],[-7,15,417],[-4,15,391],[5,-38,412]],
+  "robot_points": [[200,0,160],[200,-25,160],[170,0,155],[170,25,155],[200,0,210],[200,20,210],[220,0,160]],
+  "source": "User supplied seven correspondences on 2026-10-12; F corrected to robot (200,20,210). One camera reading supplied per group; repeatability and robot attitude not supplied."
+}

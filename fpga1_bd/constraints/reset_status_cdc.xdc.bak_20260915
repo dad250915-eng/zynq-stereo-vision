@@ -1,0 +1,3 @@
+# user_done is a stable level crossing into the existing two-stage ASYNC_REG synchronizer.
+# Cut only stage-zero D; stage-zero Q to stage-one D remains timed.
+set_false_path -to [get_pins -hierarchical -filter {NAME =~ */aurora_reset_ctrl_0/inst/done_sync_reg[0]/D}]

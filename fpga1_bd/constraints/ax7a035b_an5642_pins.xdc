@@ -1,0 +1,83 @@
+# AX7A035B + AN5642 on J11. Current design_1_wrapper port names.
+# Camera 0 = vendor cmos1; camera 1 = vendor cmos2 (verify optical left/right separately).
+# Sources: AX7A035B carrier schematic p10; AC7A035 core schematic;
+# official 17_dual_ov5640_an5642_hdmi/src/constraints/ddr3_ov5640_hdmi.xdc.
+# BANK16 VCCIO must be the stock 3.3 V setting.
+# Pin/electrical constraints only. See CONSTRAINTS_README.md for incomplete top-level clocks/AXIS.
+set_property CFGBVS VCCO [current_design]
+set_property CONFIG_VOLTAGE 3.3 [current_design]
+
+set_property PACKAGE_PIN G21 [get_ports {cmos_d_1[9]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_d_1[9]}]
+set_property PACKAGE_PIN G22 [get_ports {cam1_sda_0}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cam1_sda_0}]
+set_property PACKAGE_PIN C22 [get_ports {cmos_d_1[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_d_1[6]}]
+set_property PACKAGE_PIN B22 [get_ports {cam1_scl_0}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cam1_scl_0}]
+set_property PACKAGE_PIN F19 [get_ports {cmos_d_1[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_d_1[7]}]
+set_property PACKAGE_PIN F20 [get_ports {cmos_d_1[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_d_1[2]}]
+set_property PACKAGE_PIN D20 [get_ports {cmos_href_1}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_href_1}]
+set_property PACKAGE_PIN C20 [get_ports {cmos_d_1[8]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_d_1[8]}]
+set_property PACKAGE_PIN A18 [get_ports {cmos_d_1[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_d_1[3]}]
+set_property PACKAGE_PIN A19 [get_ports {cam1_rst_n_0}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cam1_rst_n_0}]
+set_property PACKAGE_PIN B20 [get_ports {cmos_d_1[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_d_1[4]}]
+set_property PACKAGE_PIN A20 [get_ports {cmos_d_1[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_d_1[5]}]
+set_property PACKAGE_PIN F18 [get_ports {cmos_d_1[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_d_1[1]}]
+set_property PACKAGE_PIN E18 [get_ports {cmos_d_1[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_d_1[0]}]
+set_property PACKAGE_PIN E19 [get_ports {cmos_vsync_1}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_vsync_1}]
+set_property PACKAGE_PIN D19 [get_ports {cmos_pclk_1}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_pclk_1}]
+set_property PACKAGE_PIN C19 [get_ports {cam0_sda_0}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cam0_sda_0}]
+set_property PACKAGE_PIN B17 [get_ports {cmos_d_0[9]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_d_0[9]}]
+set_property PACKAGE_PIN B18 [get_ports {cmos_d_0[8]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_d_0[8]}]
+set_property PACKAGE_PIN D17 [get_ports {cam0_scl_0}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cam0_scl_0}]
+set_property PACKAGE_PIN C17 [get_ports {cmos_d_0[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_d_0[5]}]
+set_property PACKAGE_PIN A15 [get_ports {cmos_d_0[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_d_0[3]}]
+set_property PACKAGE_PIN A16 [get_ports {cmos_d_0[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_d_0[4]}]
+set_property PACKAGE_PIN B15 [get_ports {cmos_d_0[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_d_0[6]}]
+set_property PACKAGE_PIN B16 [get_ports {cmos_d_0[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_d_0[0]}]
+set_property PACKAGE_PIN A13 [get_ports {cmos_d_0[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_d_0[7]}]
+set_property PACKAGE_PIN A14 [get_ports {cmos_d_0[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_d_0[1]}]
+set_property PACKAGE_PIN E16 [get_ports {cmos_d_0[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_d_0[2]}]
+set_property PACKAGE_PIN D16 [get_ports {cmos_pclk_0}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_pclk_0}]
+set_property PACKAGE_PIN C14 [get_ports {cmos_href_0}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_href_0}]
+set_property PACKAGE_PIN C15 [get_ports {cmos_vsync_0}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cmos_vsync_0}]
+set_property PACKAGE_PIN F16 [get_ports {cam0_rst_n_0}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cam0_rst_n_0}]
+
+# Board RESET button F15: maps to current rst_n input only.
+# rst_n drives PLL resetn and proc_sys_reset ext_reset_in; peripheral_aresetn resets functional blocks.
+set_property PACKAGE_PIN F15 [get_ports rst_n]
+set_property IOSTANDARD LVCMOS33 [get_ports rst_n]
+
+# Board differential clock pins are in ax7a035b_board_clock.xdc; AXIS stays internal to future Aurora.
+# No DRC severity downgrade and no blanket false paths are used.
+
+

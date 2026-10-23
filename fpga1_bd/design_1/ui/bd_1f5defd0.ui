@@ -1,0 +1,165 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.272047",
+   "Default View_TopLeft":"92,-478",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port GT_DIFF_REFCLK1_0 -pg 1 -lvl 14 -x 4510 -y 680 -defaultsOSRD -right
+preplace port GT_SERIAL_RX_0 -pg 1 -lvl 14 -x 4510 -y 740 -defaultsOSRD -right
+preplace port GT_SERIAL_TX_0 -pg 1 -lvl 14 -x 4510 -y 700 -defaultsOSRD
+preplace port port-id_cam0_rst_n_0 -pg 1 -lvl 14 -x 4510 -y -20 -defaultsOSRD
+preplace port port-id_cam0_scl_0 -pg 1 -lvl 14 -x 4510 -y -100 -defaultsOSRD
+preplace port port-id_cam0_sda_0 -pg 1 -lvl 14 -x 4510 -y -80 -defaultsOSRD
+preplace port port-id_cam1_rst_n_0 -pg 1 -lvl 14 -x 4510 -y 0 -defaultsOSRD
+preplace port port-id_cam1_scl_0 -pg 1 -lvl 14 -x 4510 -y -60 -defaultsOSRD
+preplace port port-id_cam1_sda_0 -pg 1 -lvl 14 -x 4510 -y -40 -defaultsOSRD
+preplace port port-id_cmos_href_0 -pg 1 -lvl 0 -x -90 -y 650 -defaultsOSRD
+preplace port port-id_cmos_pclk_0 -pg 1 -lvl 0 -x -90 -y 670 -defaultsOSRD
+preplace port port-id_cmos_vsync_0 -pg 1 -lvl 0 -x -90 -y 630 -defaultsOSRD
+preplace port port-id_cmos_href_1 -pg 1 -lvl 0 -x -90 -y 1020 -defaultsOSRD
+preplace port port-id_cmos_pclk_1 -pg 1 -lvl 0 -x -90 -y 1040 -defaultsOSRD
+preplace port port-id_cmos_vsync_1 -pg 1 -lvl 0 -x -90 -y 1000 -defaultsOSRD
+preplace port port-id_rst_n -pg 1 -lvl 0 -x -90 -y 460 -defaultsOSRD
+preplace port port-id_sys_clk_p -pg 1 -lvl 0 -x -90 -y 860 -defaultsOSRD
+preplace port port-id_sys_clk_n -pg 1 -lvl 0 -x -90 -y 840 -defaultsOSRD
+preplace portBus cmos_d_0 -pg 1 -lvl 0 -x -90 -y 690 -defaultsOSRD
+preplace portBus cmos_d_1 -pg 1 -lvl 0 -x -90 -y 1060 -defaultsOSRD
+preplace portBus sfp1_tx_disable -pg 1 -lvl 14 -x 4510 -y 1140 -defaultsOSRD
+preplace inst dual_ov5640_init_0 -pg 1 -lvl 6 -x 1520 -y 40 -defaultsOSRD
+preplace inst alinx_ov5640_0 -pg 1 -lvl 5 -x 1220 -y 690 -defaultsOSRD
+preplace inst alinx_ov5640_1 -pg 1 -lvl 5 -x 1220 -y 1070 -defaultsOSRD
+preplace inst axis_dwidth_converter_0 -pg 1 -lvl 7 -x 1853 -y 800 -defaultsOSRD
+preplace inst axis_dwidth_converter_1 -pg 1 -lvl 7 -x 1853 -y 1270 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 8 -x 2350 -y 260 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 4 -x 860 -y -10 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 210 -y 850 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 3 -x 530 -y 480 -defaultsOSRD
+preplace inst aurora_8b10b_0 -pg 1 -lvl 12 -x 3820 -y 890 -defaultsOSRD
+preplace inst axis_clock_converter_0 -pg 1 -lvl 9 -x 3030 -y 780 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 10 -x 3270 -y 1110 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 10 -x 3270 -y 990 -defaultsOSRD
+preplace inst aurora_reset_ctrl_0 -pg 1 -lvl 12 -x 3820 -y 1320 -defaultsOSRD
+preplace inst xlconstant_3 -pg 1 -lvl 11 -x 3450 -y 1390 -defaultsOSRD
+preplace inst system_ila_1 -pg 1 -lvl 13 -x 4300 -y 720 -defaultsOSRD
+preplace inst xlconstant_4 -pg 1 -lvl 8 -x 2350 -y 1210 -defaultsOSRD
+preplace inst axis_tx_reset_ctrl_0 -pg 1 -lvl 12 -x 3820 -y 320 -defaultsOSRD
+preplace inst xlconstant_5 -pg 1 -lvl 13 -x 4300 -y 1140 -defaultsOSRD
+preplace inst xlconstant_6 -pg 1 -lvl 1 -x 20 -y 280 -defaultsOSRD
+preplace inst rst_design_1_125M -pg 1 -lvl 13 -x 4300 -y 450 -defaultsOSRD
+preplace inst line_monitor_control -pg 1 -lvl 3 -x 530 -y 1260 -defaultsOSRD
+preplace inst line_monitor_keep -pg 1 -lvl 11 -x 3450 -y 1290 -defaultsOSRD
+preplace inst ila_line_stats -pg 1 -lvl 9 -x 3030 -y 1450 -defaultsOSRD
+preplace inst axis_line_monitor_0 -pg 1 -lvl 7 -x 1853 -y 1810 -defaultsOSRD
+preplace inst line_tx_right -pg 1 -lvl 8 -x 2350 -y 2220 -defaultsOSRD
+preplace inst axis_frame_encoder_0 -pg 1 -lvl 8 -x 2350 -y 960 -defaultsOSRD
+preplace inst axis_frame_encoder_1 -pg 1 -lvl 8 -x 2350 -y 760 -defaultsOSRD
+preplace inst axis_frame_sender_0 -pg 1 -lvl 9 -x 3030 -y 1010 -defaultsOSRD
+preplace netloc Net 1 6 8 NJ -100 NJ -100 NJ -100 NJ -100 NJ -100 NJ -100 NJ -100 NJ
+preplace netloc Net1 1 6 8 NJ -80 NJ -80 NJ -80 NJ -80 NJ -80 NJ -80 NJ -80 NJ
+preplace netloc Net2 1 6 8 NJ -60 NJ -60 NJ -60 NJ -60 NJ -60 NJ -60 NJ -60 NJ
+preplace netloc Net3 1 6 8 NJ -40 NJ -40 NJ -40 NJ -40 NJ -40 NJ -40 NJ -40 NJ
+preplace netloc active_camera 1 6 2 NJ 100 2150
+preplace netloc aurora_8b10b_0_sys_reset_out 1 11 2 3620 450 4020
+preplace netloc aurora_8b10b_0_user_clk_out 1 8 5 2880 890 NJ 890 NJ 890 3570 460 4080
+preplace netloc aurora_reset_ctrl_0_aurora_gt_reset 1 11 2 3620 1180 4100
+preplace netloc aurora_reset_ctrl_0_aurora_reset 1 11 2 3610 1190 4020
+preplace netloc axis_frame_encoder_1_debug_resync_count 1 7 2 2130 580 2520
+preplace netloc axis_frame_encoder_1_debug_state 1 7 2 2120 590 2510
+preplace netloc axis_frame_sender_0_debug_fifo 1 7 3 2160 510 2600J 480 3180
+preplace netloc axis_line_monitor_0_completed_lines 1 7 2 2030J 1780 2610
+preplace netloc axis_line_monitor_0_event_flags 1 7 2 NJ 1740 2590
+preplace netloc axis_line_monitor_0_first_error_beats 1 7 2 2140J 1880 2710
+preplace netloc axis_line_monitor_0_first_error_flags 1 7 2 2040J 1870 2690
+preplace netloc axis_line_monitor_0_first_error_frame 1 7 2 2190J 1910 2730
+preplace netloc axis_line_monitor_0_first_error_line 1 7 2 2180J 1890 2720
+preplace netloc axis_line_monitor_0_first_error_valid 1 7 2 2150J 1900 2700
+preplace netloc axis_line_monitor_0_frame_error_count 1 7 2 NJ 1860 2670
+preplace netloc axis_line_monitor_0_frame_index 1 7 2 NJ 1680 2660
+preplace netloc axis_line_monitor_0_keep_error_count 1 7 2 NJ 1840 2680
+preplace netloc axis_line_monitor_0_last_frame_lines 1 7 2 NJ 1720 2650
+preplace netloc axis_line_monitor_0_long_count 1 7 2 NJ 1800 2630
+preplace netloc axis_line_monitor_0_short_count 1 7 2 2020J 1790 2620
+preplace netloc axis_line_monitor_0_sof_mid_count 1 7 2 NJ 1820 2640
+preplace netloc axis_line_monitor_0_sticky_flags 1 7 2 NJ 1760 2600
+preplace netloc axis_tx_reset_ctrl_0_m_axis_aresetn 1 8 5 2880 440 NJ 440 NJ 440 NJ 440 4020
+preplace netloc busy 1 6 2 NJ 20 2170
+preplace netloc camera_done 1 6 6 NJ 60 2180 10 2880J 30 NJ 30 NJ 30 3600
+preplace netloc camera_error 1 6 6 NJ 80 2190 20 2610J 40 NJ 40 NJ 40 3550
+preplace netloc channel_up 1 11 2 3610 570 4030
+preplace netloc clk_wiz_0_locked 1 2 11 320 370 NJ 370 NJ 370 NJ 370 NJ 370 2040 520 2610J 490 NJ 490 NJ 490 3550 490 NJ
+preplace netloc cmos_d_0_1 1 0 5 NJ 690 NJ 690 NJ 690 NJ 690 950
+preplace netloc cmos_d_1_1 1 0 5 NJ 1060 NJ 1060 NJ 1060 NJ 1060 940
+preplace netloc cmos_href_0_1 1 0 5 NJ 650 NJ 650 NJ 650 NJ 650 1060
+preplace netloc cmos_href_1_1 1 0 5 -70J 1010 NJ 1010 NJ 1010 NJ 1010 960
+preplace netloc cmos_pclk_0_1 1 0 5 -60J 700 NJ 700 NJ 700 NJ 700 940
+preplace netloc cmos_pclk_1_1 1 0 5 NJ 1040 NJ 1040 NJ 1040 NJ 1040 950
+preplace netloc cmos_vsync_0_1 1 0 5 NJ 630 NJ 630 NJ 630 NJ 630 1060
+preplace netloc cmos_vsync_1_1 1 0 5 -60J 1020 NJ 1020 NJ 1020 NJ 1020 N
+preplace netloc debug_first_user 1 7 2 2180 540 2560
+preplace netloc debug_input_sof_accept 1 7 2 2190 500 2570
+preplace netloc debug_resync_count 1 7 2 2170 550 2550
+preplace netloc debug_resync_event 1 7 2 2150 560 2540
+preplace netloc debug_state 1 7 2 2140 570 2530
+preplace netloc done 1 6 2 NJ 40 2140
+preplace netloc dual_ov5640_init_0_cam0_rst_n 1 6 8 NJ -20 NJ -20 NJ -20 NJ -20 NJ -20 NJ -20 NJ -20 NJ
+preplace netloc dual_ov5640_init_0_cam1_rst_n 1 6 8 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 NJ
+preplace netloc error_byte 1 6 2 NJ 180 2020
+preplace netloc error_code 1 6 2 NJ 160 2030
+preplace netloc failed_reg 1 6 2 NJ 140 2040
+preplace netloc frame_err 1 12 1 4040 670n
+preplace netloc hard_err 1 12 1 4050 690n
+preplace netloc lane_up 1 12 1 4060 710n
+preplace netloc line_monitor_control_probe_out0 1 3 5 NJ 1260 NJ 1260 NJ 1260 1663 2250 NJ
+preplace netloc line_tx_right_completed_lines 1 8 1 2790 1500n
+preplace netloc line_tx_right_event_flags 1 8 1 2750 1460n
+preplace netloc line_tx_right_first_error_beats 1 8 1 2870 1660n
+preplace netloc line_tx_right_first_error_flags 1 8 1 2860 1640n
+preplace netloc line_tx_right_first_error_frame 1 8 1 2880 1680n
+preplace netloc line_tx_right_first_error_line 1 8 1 2890 1700n
+preplace netloc line_tx_right_first_error_valid 1 8 1 2850 1620n
+preplace netloc line_tx_right_frame_error_count 1 8 1 2810 1580n
+preplace netloc line_tx_right_frame_index 1 8 1 2840 1740n
+preplace netloc line_tx_right_keep_error_count 1 8 1 2820 1600n
+preplace netloc line_tx_right_last_frame_lines 1 8 1 2830 1720n
+preplace netloc line_tx_right_long_count 1 8 1 2780 1540n
+preplace netloc line_tx_right_short_count 1 8 1 2770 1520n
+preplace netloc line_tx_right_sof_mid_count 1 8 1 2800 1560n
+preplace netloc line_tx_right_sticky_flags 1 8 1 2760 1480n
+preplace netloc m_axis_video_aclk_0_1 1 2 10 350 580 NJ 580 1040 580 1380 580 1683 580 2110 650 2610 920 3190J 930 NJ 930 3540
+preplace netloc pll_not_locked_out 1 12 1 4070 730n
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 3 9 N 520 1050J 520 1390J 520 1673 910 2130 1070 2740 900 NJ 900 NJ 900 3590
+preplace netloc reg_index 1 6 2 NJ 120 2050
+preplace netloc rst_design_1_125M_peripheral_aresetn 1 13 1 N 490
+preplace netloc rst_n_1 1 0 13 NJ 460 100 460 340 380 NJ 380 NJ 380 NJ 380 NJ 380 2020 490 2570 430 NJ 430 NJ 430 NJ 430 NJ
+preplace netloc rx_resetdone_out 1 12 1 4100 750n
+preplace netloc soft_err 1 12 1 4110 770n
+preplace netloc sys_clk_n_1 1 0 2 NJ 840 N
+preplace netloc sys_clk_p_1 1 0 2 NJ 860 N
+preplace netloc tx_lock 1 12 1 4120 790n
+preplace netloc tx_resetdone_out 1 12 1 4130 810n
+preplace netloc xlconstant_0_dout 1 2 11 360 50 NJ 50 980J 50 1400 240 1670J 50 2060J 30 2600J 50 NJ 50 NJ 50 NJ 50 4030
+preplace netloc xlconstant_1_dout 1 10 2 3350 870 NJ
+preplace netloc xlconstant_2_dout 1 10 2 3360 910 3580J
+preplace netloc xlconstant_3_dout 1 11 1 3620 1360n
+preplace netloc xlconstant_4_dout 1 8 1 2580 750n
+preplace netloc xlconstant_5_dout 1 13 1 N 1140
+preplace netloc xlconstant_6_dout 1 1 2 NJ 280 330
+preplace netloc GT_DIFF_REFCLK1_0_1 1 11 3 3600 550 NJ 550 4490
+preplace netloc GT_SERIAL_RX_0_1 1 11 3 3620 560 NJ 560 4480
+preplace netloc alinx_ov5640_0_m_axis_video 1 5 2 1400 780 NJ
+preplace netloc alinx_ov5640_1_m_axis_video 1 5 2 1380 1250 NJ
+preplace netloc aurora_8b10b_0_GT_SERIAL_TX 1 12 2 4090 570 4470J
+preplace netloc axis_clock_converter_0_M_AXIS 1 9 3 NJ 780 NJ 780 3560
+preplace netloc axis_dwidth_converter_0_M_AXIS 1 6 2 1693 880 2020
+preplace netloc axis_dwidth_converter_1_M_AXIS 1 7 1 2160 740n
+preplace netloc axis_frame_encoder_0_m_axis 1 8 2 2870 910 3170
+preplace netloc axis_frame_encoder_0_m_axis1 1 8 1 2590 910n
+preplace netloc axis_frame_encoder_1_m_axis 1 8 1 2600 710n
+levelinfo -pg 1 -90 20 210 530 860 1220 1520 1853 2350 3030 3270 3450 3820 4300 4510
+pagesize -pg 1 -db -bbox -sgen -720 -1020 4830 2530
+"
+}
+{
+   "da_board_cnt":"1"
+}
