@@ -1,0 +1,3 @@
+PERF frame=98 roi=494x208 units=us observed=SW poll=10 gap_max=11
+PERF IP A=11100 B=77492 C=9265 D=121090 E=15 G=45864 H=46153 I=46201 J=10664
+PERF GHI=46195 total=325371 prep=61615 present=8276 (-1=not_run_or_incomplete)

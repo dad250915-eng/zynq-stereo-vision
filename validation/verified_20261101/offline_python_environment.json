@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\25680\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "packages": {
+    "numpy": "2.3.5",
+    "pyserial": "3.5 (from existing vendor/serial, not installed distribution)"
+  },
+  "tkinter_import": "TclError(\"Can't find a usable init.tcl in the following directories: \\n    {C:\\\\Users\\\\25680\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\python\\\\tcl\\\\tcl8.6}\\n\\n\\n\\nThis probably means that Tcl wasn't installed properly.\\n\")",
+  "tkinter_module_import": "PASS",
+  "gui_initialization": "NOT_VERIFIED; Tcl initialization failed in this execution environment"
+}

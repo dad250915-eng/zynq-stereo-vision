@@ -1,0 +1,17 @@
+name: Source release checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  source-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify source manifest and package contracts
+        run: python scripts/check_submission.py --check-manifest
+      - name: Test release tools only
+        run: python -B -m unittest discover -s scripts/tests -p 'test_*.py' -v
+      # Does not invoke Xilinx tools or certify hardware/robot behavior.

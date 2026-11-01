@@ -1,0 +1,18 @@
+{
+  "exit_code": 1,
+  "elapsed_seconds": 2.375,
+  "command": [
+    "C:\\Users\\25680\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "C:\\Users\\25680\\Documents\\Codex\\2026-10-09\\new-chat\\work\\submission_supplement_20261031\\python_test_copy\\tests",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "source_copy": "Isolated application copy; source folder not executed in place. Vendored pyserial 3.5 used.",
+  "hardware_access": "No device opened; existing fake-controller/offline tests only."
+}

@@ -1,0 +1,6 @@
+{
+  "protected_original_files": 673,
+  "modified_or_missing": [],
+  "status": "PASS",
+  "scope": "Byte comparison of existing algorithm/RTL/constraints/IP/maps/source files. New release helper scripts are additions."
+}

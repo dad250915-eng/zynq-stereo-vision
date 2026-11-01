@@ -1,0 +1,219 @@
+{
+  "units": "us",
+  "frames": 3,
+  "excluded_units_frames": 0,
+  "metrics": {
+    "capture_copy_us": {
+      "n": 3,
+      "min_us": 0,
+      "mean_us": 0,
+      "max_us": 0
+    },
+    "capture_park_wait": {
+      "n": 3,
+      "min_us": 62089,
+      "mean_us": 62195.666666666664,
+      "max_us": 62403
+    },
+    "capture_pre_roi": {
+      "n": 3,
+      "min_us": 99548,
+      "mean_us": 99652.66666666667,
+      "max_us": 99860
+    },
+    "capture_rect_left": {
+      "n": 3,
+      "min_us": 34605,
+      "mean_us": 34607.666666666664,
+      "max_us": 34610
+    },
+    "capture_rect_pair": {
+      "n": 3,
+      "min_us": 37437,
+      "mean_us": 37439.666666666664,
+      "max_us": 37442
+    },
+    "capture_rect_right": {
+      "n": 3,
+      "min_us": 37437,
+      "mean_us": 37439.666666666664,
+      "max_us": 37442
+    },
+    "capture_round": {
+      "n": 3,
+      "min_us": 319632,
+      "mean_us": 319785.6666666667,
+      "max_us": 319971
+    },
+    "ip_A": {
+      "n": 3,
+      "min_us": 11093,
+      "mean_us": 11099.333333333334,
+      "max_us": 11110
+    },
+    "ip_B": {
+      "n": 3,
+      "min_us": 58888,
+      "mean_us": 60815,
+      "max_us": 62905
+    },
+    "ip_C": {
+      "n": 3,
+      "min_us": 9267,
+      "mean_us": 9267.666666666666,
+      "max_us": 9269
+    },
+    "ip_D": {
+      "n": 3,
+      "min_us": 10856,
+      "mean_us": 10862.666666666666,
+      "max_us": 10866
+    },
+    "ip_E": {
+      "n": 3,
+      "min_us": 14,
+      "mean_us": 14.333333333333334,
+      "max_us": 15
+    },
+    "ip_G": {
+      "n": 3,
+      "min_us": 37633,
+      "mean_us": 37747,
+      "max_us": 37884
+    },
+    "ip_H": {
+      "n": 3,
+      "min_us": 37889,
+      "mean_us": 38002.333333333336,
+      "max_us": 38139
+    },
+    "ip_I": {
+      "n": 3,
+      "min_us": 37938,
+      "mean_us": 38051.333333333336,
+      "max_us": 38188
+    },
+    "ip_J": {
+      "n": 3,
+      "min_us": 10733,
+      "mean_us": 10737,
+      "max_us": 10740
+    },
+    "overlap_D_GHI": {
+      "n": 3,
+      "min_us": 10819,
+      "mean_us": 10825.333333333334,
+      "max_us": 10829
+    },
+    "roi_GHI": {
+      "n": 3,
+      "min_us": 37930,
+      "mean_us": 38043.333333333336,
+      "max_us": 38180
+    },
+    "roi_prep": {
+      "n": 3,
+      "min_us": 61614,
+      "mean_us": 61614,
+      "max_us": 61614
+    },
+    "roi_present": {
+      "n": 3,
+      "min_us": 5955,
+      "mean_us": 8175.666666666667,
+      "max_us": 10396
+    },
+    "roi_total": {
+      "n": 3,
+      "min_us": 179262,
+      "mean_us": 179444.66666666666,
+      "max_us": 179621
+    }
+  },
+  "rates": {
+    "roi_processing_hz": 5.572748516720104,
+    "complete_round_hz": 3.12709450183821
+  },
+  "full_mode_lines_not_aggregated": 0,
+  "records": [
+    {
+      "frame": 137,
+      "roi": "432x165",
+      "units": "us",
+      "ip_A": 11093,
+      "ip_B": 58888,
+      "ip_C": 9269,
+      "ip_D": 10866,
+      "ip_E": 15,
+      "ip_G": 37633,
+      "ip_H": 37889,
+      "ip_I": 37938,
+      "ip_J": 10733,
+      "roi_GHI": 37930,
+      "roi_total": 179621,
+      "roi_prep": 61614,
+      "roi_present": 10396,
+      "overlap_D_GHI": 10828,
+      "capture_copy_us": 0,
+      "capture_park_wait": 62089,
+      "capture_rect_left": 34610,
+      "capture_rect_right": 37442,
+      "capture_rect_pair": 37442,
+      "capture_pre_roi": 99548,
+      "capture_round": 319971
+    },
+    {
+      "frame": 138,
+      "roi": "433x167",
+      "units": "us",
+      "ip_A": 11110,
+      "ip_B": 62905,
+      "ip_C": 9267,
+      "ip_D": 10856,
+      "ip_E": 14,
+      "ip_G": 37884,
+      "ip_H": 38139,
+      "ip_I": 38188,
+      "ip_J": 10738,
+      "roi_GHI": 38180,
+      "roi_total": 179451,
+      "roi_prep": 61614,
+      "roi_present": 5955,
+      "overlap_D_GHI": 10819,
+      "capture_copy_us": 0,
+      "capture_park_wait": 62095,
+      "capture_rect_left": 34605,
+      "capture_rect_right": 37437,
+      "capture_rect_pair": 37437,
+      "capture_pre_roi": 99550,
+      "capture_round": 319632
+    },
+    {
+      "frame": 139,
+      "roi": "432x165",
+      "units": "us",
+      "ip_A": 11095,
+      "ip_B": 60652,
+      "ip_C": 9267,
+      "ip_D": 10866,
+      "ip_E": 14,
+      "ip_G": 37724,
+      "ip_H": 37979,
+      "ip_I": 38028,
+      "ip_J": 10740,
+      "roi_GHI": 38020,
+      "roi_total": 179262,
+      "roi_prep": 61614,
+      "roi_present": 8176,
+      "overlap_D_GHI": 10829,
+      "capture_copy_us": 0,
+      "capture_park_wait": 62403,
+      "capture_rect_left": 34608,
+      "capture_rect_right": 37440,
+      "capture_rect_pair": 37440,
+      "capture_pre_roi": 99860,
+      "capture_round": 319754
+    }
+  ],
+  "scope": "Software-observed intervals. G/H/I overlap; no sum of IP times, no inferred camera/HDMI FPS. Missing CAPTURE means no complete-round rate."
+}

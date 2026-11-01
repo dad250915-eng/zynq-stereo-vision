@@ -1,0 +1,7 @@
+{
+  "RTL_synthesis": "PASS",
+  "RTL_simulation": "BLOCKED: bundled XSim GCC failed compiling generated C, same native DLL loader issue as previous build",
+  "testbench": "test_ui.sv retained for bounce, hold, 0->1->2->0, reset and LED checks",
+  "production_debounce_ms": 20,
+  "board_tested": false
+}

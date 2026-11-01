@@ -1,0 +1,15 @@
+{
+  "static_status": "PASS",
+  "scope": "static source/package checks only",
+  "manifest_checked": false,
+  "inventory_files": 1843,
+  "inventory_bytes": 121453795,
+  "component_packages_checked": 19,
+  "errors": [],
+  "remaining_items": [
+    "Project-wide license unresolved; see docs/license_status.md",
+    "Historical routed reports are not final triple-mode timing proof.",
+    "Clean HLS/Vivado/XSCT build and new board measurements remain pending.",
+    "AI excerpts/summaries do not replace an original full transcript export."
+  ]
+}

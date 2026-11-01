@@ -1,9 +1,9 @@
-# Python
+# Python and environments
 __pycache__/
 *.py[cod]
 .venv/
 venv/
-# Logs and generated files
+# Runtime and generated artifacts
 logs/
 *.log
 *.log.*
@@ -13,6 +13,8 @@ logs/
 *.dcp
 *.str
 *.wdb
+/validation/local/
+/board/board_config.tcl
 # Local settings
 .env
 .env.*

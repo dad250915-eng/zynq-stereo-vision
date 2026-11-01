@@ -1,0 +1,21 @@
+PERF frame=137 roi=432x165 units=us observed=SW poll=10 gap_max=12
+PERF IP A=11093 B=58888 C=9269 D=10866 E=15 G=37633 H=37889 I=37938 J=10733
+PERF GHI=37930 total=179621 prep=61614 present=10396 (-1=not_run_or_incomplete)
+PERF overlap_D_GHI=10828 units=us mask_source=B (-1=GHI_not_run)
+ROI frame=137 rect=(220,240,432,165) area=17296 depth_status=0 XYZ_status=0 rgb=08000000
+XYZ RIGHT_RECT frame=00000089 valid=1 uv=(563,316) d_q4=2064 X_mm=-15.306 Y_mm=-11.997 Z_mm=343.165 n=121/121 support=1000/1000 iqr_q4=48 calc_us=37938
+PERF CAPTURE direct=1 copy_us=0 park_wait=62089 rect_left=34610 rect_right=37442 rect_pair=37442 pre_roi=99548 round=319971 raw_RX0=0 raw_RX1=1 units=us
+PERF frame=138 roi=433x167 units=us observed=SW poll=10 gap_max=12
+PERF IP A=11110 B=62905 C=9267 D=10856 E=14 G=37884 H=38139 I=38188 J=10738
+PERF GHI=38180 total=179451 prep=61614 present=5955 (-1=not_run_or_incomplete)
+PERF overlap_D_GHI=10819 units=us mask_source=B (-1=GHI_not_run)
+ROI frame=138 rect=(220,240,433,167) area=17542 depth_status=0 XYZ_status=0 rgb=08200000
+XYZ RIGHT_RECT frame=0000008A valid=1 uv=(557,323) d_q4=2096 X_mm=-16.911 Y_mm=-9.669 Z_mm=337.926 n=121/121 support=1000/1000 iqr_q4=16 calc_us=38188
+PERF CAPTURE direct=1 copy_us=0 park_wait=62095 rect_left=34605 rect_right=37437 rect_pair=37437 pre_roi=99550 round=319632 raw_RX0=1 raw_RX1=0 units=us
+PERF frame=139 roi=432x165 units=us observed=SW poll=10 gap_max=12
+PERF IP A=11095 B=60652 C=9267 D=10866 E=14 G=37724 H=37979 I=38028 J=10740
+PERF GHI=38020 total=179262 prep=61614 present=8176 (-1=not_run_or_incomplete)
+PERF overlap_D_GHI=10829 units=us mask_source=B (-1=GHI_not_run)
+ROI frame=139 rect=(220,240,432,165) area=17432 depth_status=0 XYZ_status=0 rgb=08000000
+XYZ RIGHT_RECT frame=0000008B valid=1 uv=(557,322) d_q4=2096 X_mm=-16.911 Y_mm=-9.975 Z_mm=337.926 n=121/121 support=1000/1000 iqr_q4=48 calc_us=38028
+PERF CAPTURE direct=1 copy_us=0 park_wait=62403 rect_left=34608 rect_right=37440 rect_pair=37440 pre_roi=99860 round=319754 raw_RX0=2 raw_RX1=2 units=us

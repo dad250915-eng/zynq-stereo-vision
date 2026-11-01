@@ -1,0 +1,14 @@
+{
+  "host_schedule": "PASS",
+  "cases": [
+    "consumer-first I/K/H/G launch",
+    "D and GHI overlap retained",
+    "Z=500000 on,500001 off,499999 on",
+    "invalid/negative/empty target off",
+    "range-depth-depth-fusion-fusion-invalid-range without stale active IP",
+    "depth skips B/C/D/E/I/J",
+    "full dimensions and zero crop",
+    "processing timeout clears LED and retains display"
+  ],
+  "model_not_board": true
+}

@@ -1,0 +1,18 @@
+{
+  "K_native": "PASS",
+  "full_frame": "1280x720",
+  "color_stride_words": 1920,
+  "blend_eighths_tested": [
+    0,
+    1,
+    2,
+    8
+  ],
+  "invalid_depth": "mode1 black; mode2 preserves original RGB565",
+  "orientation": "single vertical flip, no horizontal flip",
+  "range_mode": "bit-exact passthrough including all AXIS sidebands",
+  "protocol_faults": "reported",
+  "bad_configuration": "rejected without consuming input",
+  "mode_sequence": "fusion-range-depth-fusion-range repeated",
+  "RTL_backpressure": "not simulated; integrated/board validation pending"
+}

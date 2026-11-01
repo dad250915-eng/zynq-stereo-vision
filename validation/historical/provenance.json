@@ -1,0 +1,80 @@
+[
+  {
+    "file": "validation/historical/triple_mode_20261020/full_utilization.rpt",
+    "source": "E:\\fpga_projects\\stereo_match_fpga2\\roi_architecture\\triple_mode_20261020\\full_utilization.rpt",
+    "sha256": "5c172925721df28b39aa86a76bb00c160a88d99f98b6f4be0f4c8455be0511a5",
+    "stage": "historical; not rerun in this supplement"
+  },
+  {
+    "file": "validation/historical/triple_mode_20261020/full_drc.rpt",
+    "source": "E:\\fpga_projects\\stereo_match_fpga2\\roi_architecture\\triple_mode_20261020\\full_drc.rpt",
+    "sha256": "dc1930f6bee7c01dfc33396750d778ae81b376eda385f9434390ab6dfc67d65b",
+    "stage": "historical; not rerun in this supplement"
+  },
+  {
+    "file": "validation/historical/triple_mode_20261020/k_rtl_utilization.rpt",
+    "source": "E:\\fpga_projects\\stereo_match_fpga2\\roi_architecture\\triple_mode_20261020\\k_rtl_utilization.rpt",
+    "sha256": "6a30128178e57c3853d180ebf0fb44867e8d03011ac9dfd777c23441ac3756ca",
+    "stage": "historical; not rerun in this supplement"
+  },
+  {
+    "file": "validation/historical/triple_mode_20261020/ui_rtl_utilization.rpt",
+    "source": "E:\\fpga_projects\\stereo_match_fpga2\\roi_architecture\\triple_mode_20261020\\ui_rtl_utilization.rpt",
+    "sha256": "390826d5aa18fbadedb649e09be00ef1bc0095adf3cda228051ca6d25d72107b",
+    "stage": "historical; not rerun in this supplement"
+  },
+  {
+    "file": "validation/historical/triple_mode_20261020/k_validation.json",
+    "source": "E:\\fpga_projects\\stereo_match_fpga2\\roi_architecture\\triple_mode_20261020\\k_validation.json",
+    "sha256": "be3107fdd8c3ae1e967592d2311da1d1ad68009edc7b517a23d6cef874624d56",
+    "stage": "historical; not rerun in this supplement"
+  },
+  {
+    "file": "validation/historical/triple_mode_20261020/schedule_validation.json",
+    "source": "E:\\fpga_projects\\stereo_match_fpga2\\roi_architecture\\triple_mode_20261020\\schedule_validation.json",
+    "sha256": "f5da41b2dee3c17d39fe1bfe223516e93f13cf77fc6492acd3684a35eb6fef0c",
+    "stage": "historical; not rerun in this supplement"
+  },
+  {
+    "file": "validation/historical/triple_mode_20261020/ui_validation.json",
+    "source": "E:\\fpga_projects\\stereo_match_fpga2\\roi_architecture\\triple_mode_20261020\\ui_validation.json",
+    "sha256": "2d7e185271c49a35c3355a046cee2b9ab87ecadb78f6abc1618fb69db1fcecf9",
+    "stage": "historical; not rerun in this supplement"
+  },
+  {
+    "file": "validation/historical/triple_mode_20261020/FULL_SYNTH_PASS.txt",
+    "source": "E:\\fpga_projects\\stereo_match_fpga2\\roi_architecture\\triple_mode_20261020\\FULL_SYNTH_PASS.txt",
+    "sha256": "eb4100bf93e3cfad479fb2617eb046813e64bbaa4edb282ca9d625db88ca4f6e",
+    "stage": "historical; not rerun in this supplement"
+  },
+  {
+    "file": "validation/historical/triple_mode_20261020/test_k.cpp",
+    "source": "E:\\fpga_projects\\stereo_match_fpga2\\roi_architecture\\triple_mode_20261020\\test_k.cpp",
+    "sha256": "d739aaa0d0eca562e13742fd52db6a4025ba3c94e5b508c7fffa83657624eca9",
+    "stage": "historical; not rerun in this supplement"
+  },
+  {
+    "file": "validation/historical/triple_mode_20261020/test_k.py",
+    "source": "E:\\fpga_projects\\stereo_match_fpga2\\roi_architecture\\triple_mode_20261020\\test_k.py",
+    "sha256": "3fa8d46dadcd6d5ec3bbf674e9b028c1919ae5db63f3acfd3ae555822a8afcf0",
+    "stage": "historical; not rerun in this supplement"
+  },
+  {
+    "file": "validation/historical/triple_mode_20261020/test_schedule.py",
+    "source": "E:\\fpga_projects\\stereo_match_fpga2\\roi_architecture\\triple_mode_20261020\\test_schedule.py",
+    "sha256": "248b4cda3036787e229f1ec02c9583a79c1fade6b9077c600f26b82229d2e6e3",
+    "stage": "historical; not rerun in this supplement"
+  },
+  {
+    "file": "validation/historical/triple_mode_20261020/test_ui.sv",
+    "source": "E:\\fpga_projects\\stereo_match_fpga2\\roi_architecture\\triple_mode_20261020\\test_ui.sv",
+    "sha256": "dec6c4109eefa79cc240ff2172710b1beec164f14a7b46d2aca2a54073693831",
+    "stage": "historical; not rerun in this supplement"
+  },
+  {
+    "file": "validation/historical/triple_mode_20261020/test_ui.py",
+    "source": "E:\\fpga_projects\\stereo_match_fpga2\\roi_architecture\\triple_mode_20261020\\test_ui.py",
+    "sha256": "c19a84c5d6d4fd11b902ab71f5ad2f54b17838e6acc831024e53e6f8c66607b8",
+    "stage": "historical; not rerun in this supplement"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "protected_files_checked": 673,
+  "modified_protected_files": [],
+  "missing_protected_files": [],
+  "scope": "Existing code, RTL, XDC, BD, IP descriptors, Tcl, maps and linker script versus pre-edit snapshot; D/E originals not written.",
+  "backup_snapshot": "C:\\Users\\25680\\Documents\\Codex\\2026-10-09\\new-chat\\work\\submission_supplement_20261031\\before_snapshot.json"
+}

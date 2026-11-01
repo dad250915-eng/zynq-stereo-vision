@@ -1,0 +1,13 @@
+{
+  "exit_code": 0,
+  "checks": [
+    "build_and_export.tcl: 1",
+    "build_hls.tcl: 1",
+    "create_fpga1_bd_project.tcl: 1",
+    "create_fpga2_bd_project.tcl: 1",
+    "create_vitis_workspace.tcl: 1",
+    "run_fpga2.tcl: 1"
+  ],
+  "scope": "Tcl info complete lexical structure only. No file source, Xilinx commands or devices.",
+  "passed": true
+}

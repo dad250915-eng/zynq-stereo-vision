@@ -1,0 +1,213 @@
+test_bad_or_far_input (test_auto_pose.AutoPoseTests.test_bad_or_far_input) ... ok
+test_fk_matches_real_controller_log (test_auto_pose.AutoPoseTests.test_fk_matches_real_controller_log) ... ok
+test_joint_command_and_no_ack_completion (test_auto_pose.AutoPoseTests.test_joint_command_and_no_ack_completion) ... ok
+test_reachable_targets_and_limits_after_rounding (test_auto_pose.AutoPoseTests.test_reachable_targets_and_limits_after_rounding) ... ok
+test_stale_or_model_mismatch_no_send (test_auto_pose.AutoPoseTests.test_stale_or_model_mismatch_no_send) ... ok
+test_stopped_or_changed_during_solve_no_send (test_auto_pose.AutoPoseTests.test_stopped_or_changed_during_solve_no_send) ... ok
+test_degenerate_points_rejected (test_camera_fit.FitTests.test_degenerate_points_rejected) ... ok
+test_known_rotation_and_translation_direction (test_camera_fit.FitTests.test_known_rotation_and_translation_direction) ... ok
+test_backlog_and_reset (test_camera_mode.Tests.test_backlog_and_reset) ... ok
+test_commit_one_shot_and_cancel (test_camera_mode.Tests.test_commit_one_shot_and_cancel) ... ok
+test_depth_offset_before_rotation_and_range (test_camera_mode.Tests.test_depth_offset_before_rotation_and_range) ... ok
+test_duplicates_cannot_lock (test_camera_mode.Tests.test_duplicates_cannot_lock) ... ok
+test_extended_range_still_bounded (test_camera_mode.Tests.test_extended_range_still_bounded) ... ok
+test_jitter_cannot_lock (test_camera_mode.Tests.test_jitter_cannot_lock) ... ok
+test_outside_calibration_range (test_camera_mode.Tests.test_outside_calibration_range) ... ok
+test_screenshot_jitter_and_extended_range (test_camera_mode.Tests.test_screenshot_jitter_and_extended_range) ... ok
+test_stable_lock_and_frozen_value (test_camera_mode.Tests.test_stable_lock_and_frozen_value) ... ok
+test_stale_invalid_moved_and_used_block (test_camera_mode.Tests.test_stale_invalid_moved_and_used_block) ... ok
+test_changed_camera_connection_aborts_cycle (test_camera_pick_place.PickPlaceTests.test_changed_camera_connection_aborts_cycle) ... ok
+test_cleared_hand_queue_aborts_without_retry (test_camera_pick_place.PickPlaceTests.test_cleared_hand_queue_aborts_without_retry) ... ok
+test_drop_not_confirmed_never_opens (test_camera_pick_place.PickPlaceTests.test_drop_not_confirmed_never_opens) ... ok
+test_manual_motion_and_hand_blocked_while_waiting_second (test_camera_pick_place.PickPlaceTests.test_manual_motion_and_hand_blocked_while_waiting_second) ... ok
+test_no_ack_prevents_pickup (test_camera_pick_place.PickPlaceTests.test_no_ack_prevents_pickup) ... ok
+test_one_click_completes_two_cycles_with_new_acquisition_only (test_camera_pick_place.PickPlaceTests.test_one_click_completes_two_cycles_with_new_acquisition_only) ... FAIL
+test_physical_wire_sequence_and_arrival_gates (test_camera_pick_place.PickPlaceTests.test_physical_wire_sequence_and_arrival_gates) ... ok
+test_plan_holds_gripper_until_placement_and_lifts_open (test_camera_pick_place.PickPlaceTests.test_plan_holds_gripper_until_placement_and_lifts_open) ... ok
+test_stop_and_recovery_do_not_advance (test_camera_pick_place.PickPlaceTests.test_stop_and_recovery_do_not_advance) ... ok
+test_stop_cancels_waiting_second_without_resume (test_camera_pick_place.PickPlaceTests.test_stop_cancels_waiting_second_without_resume) ... ok
+test_temporary_targets_replace_converted_coordinates_exactly (test_camera_pick_place.PickPlaceTests.test_temporary_targets_replace_converted_coordinates_exactly) ... ERROR
+test_direct_calibration_does_not_add_legacy_offset (test_camera_recalibration.CalibrationTests.test_direct_calibration_does_not_add_legacy_offset) ... FAIL
+test_each_group_flows_through_capture (test_camera_recalibration.CalibrationTests.test_each_group_flows_through_capture) ... FAIL
+test_invalid_offset_rejected (test_camera_recalibration.CalibrationTests.test_invalid_offset_rejected) ... ok
+test_new_samples_and_coordinate_version (test_camera_recalibration.CalibrationTests.test_new_samples_and_coordinate_version) ... ERROR
+test_fixed_target_experiment_converts_first_out_of_range_frame (test_camera_second_lock.SecondLockTests.test_fixed_target_experiment_converts_first_out_of_range_frame) ... ERROR
+test_frozen_target_survives_new_invalid_or_changed_coordinates (test_camera_second_lock.SecondLockTests.test_frozen_target_survives_new_invalid_or_changed_coordinates) ... ok
+test_in_range_but_unstable_frames_do_not_freeze (test_camera_second_lock.SecondLockTests.test_in_range_but_unstable_frames_do_not_freeze) ... ok
+test_invalid_candidate_breaks_stable_sequence (test_camera_second_lock.SecondLockTests.test_invalid_candidate_breaks_stable_sequence) ... ok
+test_reported_bad_lock_is_rejected_then_good_target_locks (test_camera_second_lock.SecondLockTests.test_reported_bad_lock_is_rejected_then_good_target_locks) ... FAIL
+test_esp_boot_messages_prevent_commands (test_controller.ProtocolTests.test_esp_boot_messages_prevent_commands) ... ok
+test_invalid_and_zero_motion_do_not_send (test_controller.ProtocolTests.test_invalid_and_zero_motion_do_not_send) ... ok
+test_late_reply_fault_cannot_be_misclassified (test_controller.ProtocolTests.test_late_reply_fault_cannot_be_misclassified) ... ok
+test_motion_query_fault_requests_one_stop (test_controller.ProtocolTests.test_motion_query_fault_requests_one_stop) ... ok
+test_no_startup_motion_and_serialized_query_types (test_controller.ProtocolTests.test_no_startup_motion_and_serialized_query_types) ... ok
+test_official_command_format_no_range_validation (test_controller.ProtocolTests.test_official_command_format_no_range_validation) ... ok
+test_pose_arrival_ignores_joint_reply (test_controller.ProtocolTests.test_pose_arrival_ignores_joint_reply) ... ok
+test_queue_and_bare_ok_not_arrival (test_controller.ProtocolTests.test_queue_and_bare_ok_not_arrival) ... ok
+test_slow_move_not_stopped_at_sixty_seven_seconds (test_controller.ProtocolTests.test_slow_move_not_stopped_at_sixty_seven_seconds) ... ok
+test_stop_ack_disables_and_clears_target (test_controller.ProtocolTests.test_stop_ack_disables_and_clears_target) ... ok
+test_no_ack_no_motion (test_grasp_sequence.GraspTests.test_no_ack_no_motion) ... ok
+test_off_target_cannot_close (test_grasp_sequence.GraspTests.test_off_target_cannot_close) ... ok
+test_open_then_two_moves_then_close (test_grasp_sequence.GraspTests.test_open_then_two_moves_then_close) ... ok
+test_stop_cancels_queued_close (test_grasp_sequence.GraspTests.test_stop_cancels_queued_close) ... ok
+test_hand_excludes_motion_and_repeated_hand (test_hand_lift.HandLiftTests.test_hand_excludes_motion_and_repeated_hand) ... ok
+test_hand_timeout_no_resend (test_hand_lift.HandLiftTests.test_hand_timeout_no_resend) ... ok
+test_hand_waits_query_and_ack_preserves_enable (test_hand_lift.HandLiftTests.test_hand_waits_query_and_ack_preserves_enable) ... ok
+test_stale_or_disabled_prevents_actions (test_hand_lift.HandLiftTests.test_stale_or_disabled_prevents_actions) ... ok
+test_stop_cancels_unsent_hand (test_hand_lift.HandLiftTests.test_stop_cancels_unsent_hand) ... ok
+test_vertical_enforces_down_and_uses_current_z (test_hand_lift.HandLiftTests.test_vertical_enforces_down_and_uses_current_z) ... ok
+test_full_physical_command_order (test_hand_mapping.HandMappingTests.test_full_physical_command_order) ... ok
+test_manual_mapping_and_ack (test_hand_mapping.HandMappingTests.test_manual_mapping_and_ack) ... ok
+test_old_cartesian_command_blocked_and_stale (test_j5_mapping.MappingTests.test_old_cartesian_command_blocked_and_stale) ... ok
+test_old_positive_j5_cannot_complete (test_j5_mapping.MappingTests.test_old_positive_j5_cannot_complete) ... ok
+test_preset_wire_and_completion (test_j5_mapping.MappingTests.test_preset_wire_and_completion) ... ok
+test_real_photo_feedback (test_j5_mapping.MappingTests.test_real_photo_feedback) ... ok
+test_recovery_uses_raw_data (test_j5_mapping.MappingTests.test_recovery_uses_raw_data) ... ok
+test_return_roundtrip (test_j5_mapping.MappingTests.test_return_roundtrip) ... ok
+test_small_probe_corrected_direction (test_j5_mapping.MappingTests.test_small_probe_corrected_direction) ... ok
+test_completion_logs_feedback (test_j5_probe.ProbeTests.test_completion_logs_feedback) ... ok
+test_exact_command_and_no_other_axis_change (test_j5_probe.ProbeTests.test_exact_command_and_no_other_axis_change) ... ok
+test_reject_stale_moving_disabled_busy_limit (test_j5_probe.ProbeTests.test_reject_stale_moving_disabled_busy_limit) ... ok
+test_stop_available (test_j5_probe.ProbeTests.test_stop_available) ... ok
+test_branch_jump_is_rejected (test_reference_motion.ReferenceTests.test_branch_jump_is_rejected) ... ok
+test_complete_preflight_and_final_exact_reference_point (test_reference_motion.ReferenceTests.test_complete_preflight_and_final_exact_reference_point) ... ok
+test_explicit_reenable_after_stop_allows_new_plan (test_reference_motion.ReferenceTests.test_explicit_reenable_after_stop_allows_new_plan) ... ok
+test_feedback_gate_all_stages_and_stop (test_reference_motion.ReferenceTests.test_feedback_gate_all_stages_and_stop) ... ok
+test_no_partial_plan_for_invalid_target (test_reference_motion.ReferenceTests.test_no_partial_plan_for_invalid_target) ... ok
+test_stale_feedback_and_recovery_do_not_send (test_reference_motion.ReferenceTests.test_stale_feedback_and_recovery_do_not_send) ... ok
+test_vertical_does_not_reorient_or_add_an_approach (test_reference_motion.ReferenceTests.test_vertical_does_not_reorient_or_add_an_approach) ... ok
+test_xyz_does_not_call_segment_planner (test_reference_motion.ReferenceTests.test_xyz_does_not_call_segment_planner) ... ok
+test_busy_disabled_stale_block (test_reference_preset.PresetTests.test_busy_disabled_stale_block) ... ok
+test_button_sends_one_joint_target_no_transition_or_grasp (test_reference_preset.PresetTests.test_button_sends_one_joint_target_no_transition_or_grasp) ... ok
+test_source_endpoint_and_pinned_wrist (test_reference_preset.PresetTests.test_source_endpoint_and_pinned_wrist) ... ok
+test_stop_cancels_preset (test_reference_preset.PresetTests.test_stop_cancels_preset) ... ok
+test_bad_formats_never_replace_pose (test_rx_recovery.RecoveryTests.test_bad_formats_never_replace_pose) ... ok
+test_raw_partial_bytes_extend_quiet_window (test_rx_recovery.RecoveryTests.test_raw_partial_bytes_extend_quiet_window) ... ok
+test_reader_preserves_bytes_before_decode_and_handles_split (test_rx_recovery.RecoveryTests.test_reader_preserves_bytes_before_decode_and_handles_split) ... ok
+test_real_bad_line_recover_and_no_motion_replay (test_rx_recovery.RecoveryTests.test_real_bad_line_recover_and_no_motion_replay) ... ok
+test_recovery_deadline_still_stops_once_when_moving (test_rx_recovery.RecoveryTests.test_recovery_deadline_still_stops_once_when_moving) ... ok
+test_stop_available_during_recovery (test_rx_recovery.RecoveryTests.test_stop_available_during_recovery) ... ok
+test_swapped_probe_replies_do_not_recover (test_rx_recovery.RecoveryTests.test_swapped_probe_replies_do_not_recover) ... ok
+test_full_pose_solver (test_staged_motion.Tests.test_full_pose_solver) ... ok
+test_plan_final_and_fixed_orientation (test_staged_motion.Tests.test_plan_final_and_fixed_orientation) ... ok
+test_recovery_never_advances (test_staged_motion.Tests.test_recovery_never_advances) ... ok
+test_sequence_waits_for_feedback_and_fault_stops (test_staged_motion.Tests.test_sequence_waits_for_feedback_and_fault_stops) ... ok
+test_tool_offset (test_staged_motion.Tests.test_tool_offset) ... ok
+test_unreachable (test_staged_motion.Tests.test_unreachable) ... ok
+test_held_out_is_not_used_in_fit (test_tcp_calibration.Tests.test_held_out_is_not_used_in_fit) ... ok
+test_recover_known_offset_and_holdout (test_tcp_calibration.Tests.test_recover_known_offset_and_holdout) ... ok
+test_reject_single_axis_and_inconsistent_points (test_tcp_calibration.Tests.test_reject_single_axis_and_inconsistent_points) ... ok
+test_save_requires_physical_confirmation_and_validation (test_tcp_calibration.Tests.test_save_requires_physical_confirmation_and_validation) ... ok
+test_branch_roundtrip (test_vertical_pose.BranchRegressionTests.test_branch_roundtrip) ... ok
+test_high_far_targets_still_rejected (test_vertical_pose.BranchRegressionTests.test_high_far_targets_still_rejected) ... ok
+test_reference_attitude_restores_reported_point (test_vertical_pose.BranchRegressionTests.test_reference_attitude_restores_reported_point) ... ok
+test_bad_goal_no_fallback (test_vertical_pose.VerticalTests.test_bad_goal_no_fallback) ... ok
+test_no_offset (test_vertical_pose.VerticalTests.test_no_offset) ... ok
+test_position_and_joints_alone_cannot_complete (test_vertical_pose.VerticalTests.test_position_and_joints_alone_cannot_complete) ... ok
+test_previous_up_pointing_target_rejected (test_vertical_pose.VerticalTests.test_previous_up_pointing_target_rejected) ... ok
+test_tilted_solution_rejected_before_send (test_vertical_pose.VerticalTests.test_tilted_solution_rejected_before_send) ... ok
+test_tool_axis_and_fixed_heading (test_vertical_pose.VerticalTests.test_tool_axis_and_fixed_heading) ... ok
+
+======================================================================
+ERROR: test_temporary_targets_replace_converted_coordinates_exactly (test_camera_pick_place.PickPlaceTests.test_temporary_targets_replace_converted_coordinates_exactly)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\25680\Documents\Codex\2026-10-09\new-chat\work\submission_supplement_20261031\python_test_copy\tests\test_camera_pick_place.py", line 55, in test_temporary_targets_replace_converted_coordinates_exactly
+    self.assertEqual(plan['converted_target'],converted)
+                     ~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'converted_target'
+
+======================================================================
+ERROR: test_new_samples_and_coordinate_version (test_camera_recalibration.CalibrationTests.test_new_samples_and_coordinate_version)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\25680\Documents\Codex\2026-10-09\new-chat\work\submission_supplement_20261031\python_test_copy\tests\test_camera_recalibration.py", line 12, in test_new_samples_and_coordinate_version
+    self.assertEqual(d['robot_x_offset_mm'],10.0)
+                     ~^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'robot_x_offset_mm'
+
+======================================================================
+ERROR: test_fixed_target_experiment_converts_first_out_of_range_frame (test_camera_second_lock.SecondLockTests.test_fixed_target_experiment_converts_first_out_of_range_frame)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\25680\Documents\Codex\2026-10-09\new-chat\work\submission_supplement_20261031\python_test_copy\tests\test_camera_second_lock.py", line 18, in test_fixed_target_experiment_converts_first_out_of_range_frame
+    c=self.make();c.rearm_after(10,force_single=True)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CameraCapture.rearm_after() got an unexpected keyword argument 'force_single'
+
+======================================================================
+FAIL: test_one_click_completes_two_cycles_with_new_acquisition_only (test_camera_pick_place.PickPlaceTests.test_one_click_completes_two_cycles_with_new_acquisition_only)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\25680\Documents\Codex\2026-10-09\new-chat\work\submission_supplement_20261031\python_test_copy\tests\test_camera_pick_place.py", line 152, in test_one_click_completes_two_cycles_with_new_acquisition_only
+    self.assertEqual(app.sequence.plan['target'],(200.,0.,160.))
+AssertionError: Tuples differ: (204.86379349457349, -17.29579312211547, 160.417732828082) != (200.0, 0.0, 160.0)
+
+First differing element 0:
+204.86379349457349
+200.0
+
+- (204.86379349457349, -17.29579312211547, 160.417732828082)
++ (200.0, 0.0, 160.0)
+
+======================================================================
+FAIL: test_direct_calibration_does_not_add_legacy_offset (test_camera_recalibration.CalibrationTests.test_direct_calibration_does_not_add_legacy_offset)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\25680\Documents\Codex\2026-10-09\new-chat\work\submission_supplement_20261031\python_test_copy\tests\test_camera_recalibration.py", line 44, in test_direct_calibration_does_not_add_legacy_offset
+    np.testing.assert_allclose(capture.check(2.5),np.asarray(d['predicted_robot_xyz'][0])+[10,0,0])
+  File "C:\Users\25680\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\testing\_private\utils.py", line 1711, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "C:\Users\25680\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\testing\_private\utils.py", line 919, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=1e-07, atol=0
+
+Mismatched elements: 1 / 3 (33.3%)
+Max absolute difference among violations: 10.
+Max relative difference among violations: 0.04649478
+ ACTUAL: array([205.077913,   2.605665, 158.446408])
+ DESIRED: array([215.077913,   2.605665, 158.446408])
+
+======================================================================
+FAIL: test_each_group_flows_through_capture (test_camera_recalibration.CalibrationTests.test_each_group_flows_through_capture)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\25680\Documents\Codex\2026-10-09\new-chat\work\submission_supplement_20261031\python_test_copy\tests\test_camera_recalibration.py", line 35, in test_each_group_flows_through_capture
+    np.testing.assert_allclose(capture.check(2.5),np.asarray(expected)+[10,0,0])
+  File "C:\Users\25680\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\testing\_private\utils.py", line 1711, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "C:\Users\25680\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\testing\_private\utils.py", line 919, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=1e-07, atol=0
+
+Mismatched elements: 1 / 3 (33.3%)
+Max absolute difference among violations: 10.
+Max relative difference among violations: 0.04649478
+ ACTUAL: array([205.077913,   2.605665, 158.446408])
+ DESIRED: array([215.077913,   2.605665, 158.446408])
+
+======================================================================
+FAIL: test_reported_bad_lock_is_rejected_then_good_target_locks (test_camera_second_lock.SecondLockTests.test_reported_bad_lock_is_rejected_then_good_target_locks)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\25680\Documents\Codex\2026-10-09\new-chat\work\submission_supplement_20261031\python_test_copy\tests\test_camera_second_lock.py", line 43, in test_reported_bad_lock_is_rejected_then_good_target_locks
+    np.testing.assert_allclose(c.check(17.5),np.asarray(c.cal['R'])@np.array([good[0],good[1],good[2]+20])+c.cal['t']+[10,0,0])
+  File "C:\Users\25680\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\testing\_private\utils.py", line 1711, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "C:\Users\25680\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\testing\_private\utils.py", line 919, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=1e-07, atol=0
+
+Mismatched elements: 1 / 3 (33.3%)
+Max absolute difference among violations: 10.
+Max relative difference among violations: 0.04510209
+ ACTUAL: array([211.719227,  -3.151872, 159.419689])
+ DESIRED: array([221.719227,  -3.151872, 159.419689])
+
+----------------------------------------------------------------------
+Ran 109 tests in 0.920s
+
+FAILED (failures=4, errors=3)

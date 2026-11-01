@@ -1,0 +1,3 @@
+TRIPLE_MODE_FULL_SYNTHESIS_PASS; UNRESOLVED_FUNCTIONAL_BLACKBOXES=0; DRC_ERRORS=0
+Synthesizes K 1.1 and 2-bit mode selector. Next: impl_triple_mode.
+No placement, routing or bitstream generation performed. Board testing pending.

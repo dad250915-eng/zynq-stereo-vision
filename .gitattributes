@@ -1,2 +1,10 @@
-# Auto detect text files and perform LF normalization
 * text=auto
+*.bin -text
+*.png -text
+*.jpg -text
+*.pdf -text
+*.docx -text
+*.zip -text
+*.bit -text
+*.elf -text
+*.xsa -text

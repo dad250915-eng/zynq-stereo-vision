@@ -1,0 +1,4 @@
+PERF frame=33 roi=412x165 units=us observed=SW poll=10 gap_max=12
+PERF IP A=11116 B=62439 C=9266 D=10854 E=15 G=35820 H=36076 I=36114 J=10736
+PERF GHI=36106 total=173280 prep=61615 present=2323 (-1=not_run_or_incomplete)
+PERF overlap_D_GHI=10816 units=us mask_source=B (-1=GHI_not_run)

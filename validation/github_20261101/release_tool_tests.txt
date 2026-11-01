@@ -1,0 +1,17 @@
+test_bad_elf_rejected (test_submission_tools.FileTests.test_bad_elf_rejected) ... ok
+test_bad_storage_layout_rejected (test_submission_tools.FileTests.test_bad_storage_layout_rejected) ... ok
+test_elf_pointer_symbol_is_not_array_buffer (test_submission_tools.FileTests.test_elf_pointer_symbol_is_not_array_buffer) ... ok
+test_hash_mismatch_and_unicode_name_detected (test_submission_tools.FileTests.test_hash_mismatch_and_unicode_name_detected) ... ok
+test_short_map_rejected (test_submission_tools.FileTests.test_short_map_rejected) ... ok
+test_text_line_endings_are_portable_but_binary_is_exact (test_submission_tools.FileTests.test_text_line_endings_are_portable_but_binary_is_exact) ... ok
+test_capture_with_other_units_is_not_us (test_submission_tools.PerfTests.test_capture_with_other_units_is_not_us) ... ok
+test_concurrent_times_are_not_summed (test_submission_tools.PerfTests.test_concurrent_times_are_not_summed) ... ok
+test_full_mode_capture_cannot_overwrite_previous_roi (test_submission_tools.PerfTests.test_full_mode_capture_cannot_overwrite_previous_roi) ... ok
+test_no_complete_round_invented (test_submission_tools.PerfTests.test_no_complete_round_invented) ... ok
+test_observed_excerpt_has_three_complete_rounds (test_submission_tools.PerfTests.test_observed_excerpt_has_three_complete_rounds) ... ok
+test_unknown_units_and_full_modes_excluded (test_submission_tools.PerfTests.test_unknown_units_and_full_modes_excluded) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.261s
+
+OK

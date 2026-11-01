@@ -1,0 +1,16 @@
+{
+  "README_源码提交说明.md": "source_submission_notes.md",
+  "dummy_control_new/J5方向修正说明.md": "dummy_control_new/j5_direction_notes.md",
+  "dummy_control_new/TCP标定说明.md": "dummy_control_new/tcp_calibration_notes.md",
+  "dummy_control_new/XYZ直接移动说明.md": "dummy_control_new/xyz_motion_notes.md",
+  "dummy_control_new/分步定位说明.md": "dummy_control_new/staged_motion_notes.md",
+  "dummy_control_new/参考下垂按钮说明.md": "dummy_control_new/reference_down_notes.md",
+  "dummy_control_new/参考姿态优先流程说明.md": "dummy_control_new/reference_pose_notes.md",
+  "dummy_control_new/参考抓取流程说明.md": "dummy_control_new/reference_grasp_notes.md",
+  "dummy_control_new/启动独立控制.bat": "dummy_control_new/launch_legacy.bat",
+  "dummy_control_new/垂直姿态说明.md": "dummy_control_new/vertical_pose_notes.md",
+  "dummy_control_new/摄像头两次抓放说明.md": "dummy_control_new/camera_two_pick_notes.md",
+  "dummy_control_new/摄像头模式说明.md": "dummy_control_new/camera_mode_notes.md",
+  "dummy_control_new/calibration_20260929/相机8组标定报告.md": "dummy_control_new/calibration_20260929/calibration_report.md",
+  "dummy_control_new/calibration_20261012/相机7组标定报告.md": "dummy_control_new/calibration_20261012/calibration_report.md"
+}

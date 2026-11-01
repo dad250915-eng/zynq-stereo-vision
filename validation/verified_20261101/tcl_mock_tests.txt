@@ -1,0 +1,5 @@
+Tcl stubs on ASCII-path source copy; no Xilinx tools or device calls.
+couldn't read file "C:/Users/25680/Documents/Codex/2026-10-09/new-chat/work/submission_supplement_20261031/tcl_test_copy/scripts/tests/test_tcl_entrypoints.tcl": no such file or directory
+couldn't read file "C:/Users/25680/Documents/Codex/2026-10-09/new-chat/work/submission_supplement_20261031/tcl_test_copy/scripts/tests/test_tcl_entrypoints.tcl": no such file or directory
+    while executing
+"source {C:/Users/25680/Documents/Codex/2026-10-09/new-chat/work/submission_supplement_20261031/tcl_test_copy/scripts/tests/test_tcl_entrypoints.tcl}"

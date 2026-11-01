@@ -1,0 +1,17 @@
+[
+  {
+    "skill": "fpga-release-audit",
+    "basic_frontmatter": true,
+    "official_validator": "BLOCKED: PyYAML is not installed; basic two-field frontmatter checked without YAML parser"
+  },
+  {
+    "skill": "hls-ddr-stream",
+    "basic_frontmatter": true,
+    "official_validator": "BLOCKED: PyYAML is not installed; basic two-field frontmatter checked without YAML parser"
+  },
+  {
+    "skill": "stereo-frame-contract",
+    "basic_frontmatter": true,
+    "official_validator": "BLOCKED: PyYAML is not installed; basic two-field frontmatter checked without YAML parser"
+  }
+]
